@@ -1,0 +1,11 @@
+.btn{
+    display: flex;
+    align-items: center;
+}
+
+.btn span{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--darkTurkuaz);
+    margin: 0 8px 0 0;
+}

@@ -1,0 +1,17 @@
+.footer{
+    background: #F3F3F3;
+    padding: 64px 0;
+}
+.footer .footer__cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer__cnt .logo__cnt{
+ width: 150px;
+ height: 90px;
+}
+.footer .footer__cnt .logo__cnt img{
+    object-fit: contain;
+
+}

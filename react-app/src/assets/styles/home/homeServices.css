@@ -1,0 +1,12 @@
+.h-services__cnt{
+    padding:64px 0 ;
+}
+
+.sub-title{
+    width: 100%;
+}
+.sub-title__cnt{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
