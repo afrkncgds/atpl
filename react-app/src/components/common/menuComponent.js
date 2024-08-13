@@ -1,27 +1,19 @@
-import { SvgImgComponent } from "../img/svgImgComponent"
+import { ButtonComponent } from "../button/buttonComponent"
 
-export const MenuComponent = ({data,btnText,icon}) => {
-    return(
+export const MenuComponent = ({ data, btnText, icon }) => {
+    return (
         <div className="menu-list">
-                {
-                    data.map((item)=>(
-                        <a href="/"  className="menu-item">
-                            {
-                                <span>{item}</span>
-                            }
+            {
+                data.map((item, key) => (
+                    <a href="/" className="menu-item" key={key}>
+                        {
+                            <span>{item}</span>
+                        }
 
-                        </a>
-                    ))
-                }
-                <div className="yellow-btn">
-                    {
-                        icon &&
-                        <SvgImgComponent img={icon} />
-                    }
-                    <span>{btnText}</span>
-                </div>
-
-
+                    </a>
+                ))
+            }
+            <ButtonComponent btnText={btnText} icon={icon} classN={"yellow-btn"}/>
         </div>
     )
 }

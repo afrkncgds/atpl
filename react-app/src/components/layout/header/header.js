@@ -13,8 +13,6 @@ const Header = ()=> {
                 <LogoComponent icon={"logo.svg"}/>
                 <MenuComponent data={menuArr} btnText={"Log in LMS"} icon={"user.svg"}/>
             </div>
-
-             
         </header>
     )
 }
