@@ -3,6 +3,7 @@ import { SvgImgComponent } from "../img/svgImgComponent"
 export const TextListComponent = ({data, icon, detail}) => {
     return(
         <div className="text-list">
+            <div className="text-list__block">
             {
                 data.map((item, key)=>(
                     <div key={key} className="text-list__item">
@@ -14,6 +15,7 @@ export const TextListComponent = ({data, icon, detail}) => {
                     </div>
                 ))
             }
+            </div>
             {
                 detail && 
                 <p>{detail}</p>

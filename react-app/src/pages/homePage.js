@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <div className='home page-common'>
             <h2>The Main Features</h2>
-            <TextListComponent data={listArr} detail="Basically you can manage everything about your student and students’ progress."/>
+            <TextListComponent data={listArr} detail="Basically you can manage everything about your student and students’ progress." icon={"tick.svg"}/>
         </div>
     );
 }

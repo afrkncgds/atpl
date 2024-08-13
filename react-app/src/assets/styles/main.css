@@ -371,4 +371,15 @@ p, span, input, label {
 .text-list {
   font-size: 16px;
   line-height: 24px;
+}
+
+.text-list__item {
+  display: flex;
+}
+
+.text-list__block {
+  margin: 24px 0;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
