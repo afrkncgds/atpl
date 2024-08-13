@@ -105,8 +105,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -357,6 +356,21 @@ p, span, input, label {
   color: #374151;
 }
 
+.yellow-btn {
+  padding: 10px 16px;
+  background: #FFC100;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.yellow-btn span {
+  font-size: 14px;
+  color: #482200;
+  margin: 0 0 0 8px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -387,4 +401,62 @@ p, span, input, label {
   gap: 16px;
   display: flex;
   flex-direction: column;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.header {
+  background: #1F1C4A;
+  padding: 20px 0;
+}
+
+.header--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-list .menu-item {
+  margin: 0 0 0 48px;
+}
+.menu-list .menu-item:first-child {
+  margin: 0;
+}
+.menu-list .menu-item span {
+  color: white;
+  font-size: 16px;
+}
+.menu-list .menu-item:hover span {
+  color: #FFF985;
+}
+.menu-list .yellow-btn {
+  margin: 0 0 0 48px;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+  background: #1F1C4A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 111px 0;
+}
+
+.banner--mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner--mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.banner{
+  width: 100%;
+  height: 600px;
+  background: #1F1C4A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 111px 0;
+
+}
+.banner--mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
