@@ -349,6 +349,26 @@ template {
   display: none;
 }
 
-h1 {
-  color: red;
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+p, span, input, label {
+  color: #374151;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.page-common h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+.text-list {
+  font-size: 16px;
+  line-height: 24px;
 }/*# sourceMappingURL=main.css.map */

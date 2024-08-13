@@ -1,0 +1,10 @@
+$title: #000000;
+$text: #374151;
+
+h1, h2, h3, h4, h5, h6{
+    color: $title;
+}
+
+p, span, input, label{
+    color: $text;
+}
