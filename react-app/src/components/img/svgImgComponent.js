@@ -4,7 +4,7 @@ export const SvgImgComponent = ({lazy, classN, alt, img}) => {
     return (
         <img
             loading={lazy ? "lazy" : "eager"}
-            class={`${classN ? classN : ''}`}
+            className={`${classN ? classN : ''}`}
             src={`${ASSETS}/img/svg/${img}`}
             alt={alt}
         />
