@@ -1,7 +1,9 @@
 import React from 'react';
 import { BannerComponent } from '../components/home/bannerComponent';
 import { MainFeaturesComponent } from '../components/home/mainFeaturesComponent';
+import { LicenceFeaturesComponent } from '../components/home/licenceFeaturesComponent';
 import { ImgCardComponent } from '../components/card/imgCardComponent';
+import {BussinessSliderComponent} from "../components/home/bussinessSliderComponent";
 
 const HomePage = () => {
     const benefitArr = [
@@ -26,6 +28,10 @@ const HomePage = () => {
             <BannerComponent/>
             <MainFeaturesComponent/>
             <ImgCardComponent classN={"home__cnt safe-area"} title={"Benefits of LMS"} data={benefitArr}/>
+            <LicenceFeaturesComponent/>
+            <BussinessSliderComponent/>
+
+
         </div>
     );
 }

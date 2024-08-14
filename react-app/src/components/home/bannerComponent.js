@@ -5,7 +5,7 @@ export const BannerComponent = () => {
     return (
         <section className="banner">
             <div className="banner__mask">
-                <ImgComponent img="/img/banner/banner-img.jpg" alt="banner-img" classN={"banner__bg"} />
+                <ImgComponent img="/img/banner/bannerBg.png" alt="banner-img" classN={"banner__bg"} />
             </div>
             <div className="banner__content safe-area">
                 <div className="banner__text">
@@ -27,7 +27,7 @@ export const BannerComponent = () => {
 
                 </div>
                 <div className="banner__img">
-                    
+                    <ImgComponent img="/img/banner/bannerIpad.png" alt="banner-img" classN={"banner__Ipad"} />
                 </div>
             </div>
 

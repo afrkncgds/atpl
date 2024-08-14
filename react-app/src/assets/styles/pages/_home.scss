@@ -14,3 +14,72 @@
         margin: 32px 0 0;
     }
 }
+.licenced{
+    .licenced__block{
+        padding: 64px;
+        background: #ffffff;
+        border-radius: 16px;
+    }
+    .text-list__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text-list__block{
+            width: 49%;
+        }
+
+    }
+    .text-list{
+        .title{
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                color: #111827;
+            }
+
+
+        }
+        .detail{
+            margin: 12px 0 0;
+
+            p{
+                color: #6B7280;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 400;
+
+            }
+
+
+
+        }
+        .subTitle{
+            h4{
+                color: #3F36BA;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+            margin: 32px 0 0;
+
+
+        }
+    }
+    .text-list__block{
+        margin: 0;
+    }
+
+}
+.text-list__item{
+    img{
+        margin: 0 12px 0 0;
+    }
+}
+.bussiness{
+    .bussiness__block{
+        padding: 64px;
+        background: #ffffff;
+        border-radius: 16px;
+    }
+}

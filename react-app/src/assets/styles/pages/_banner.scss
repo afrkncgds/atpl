@@ -1,7 +1,7 @@
 .banner{
   width: 100%;
   height: 600px;
-  background: #1F1C4A;
+  background: $backGround;
   position: relative;
   display: flex;
   align-items: center;
@@ -26,4 +26,51 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+}
+.banner__img{
+
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.banner__text{
+  max-width: 500px;
+  .text__title{
+    margin: 0 0 24px;
+    h3{
+      font-size:20px;
+      font-weight: 300;
+      color: $bannerTitle;
+      line-height: 36px;
+      cursor: text;
+
+    }
+  }
+  .text__content{
+    margin: 0 0 40px;
+    p{
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 56px;
+      color: #EEF2FF;
+      cursor: text;
+
+    }
+  }
+  .text__item{
+    p{
+      color: #C8D3FD;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      cursor: text;
+
+    }
+
+  }
 }
