@@ -528,6 +528,12 @@ p, span, input, label {
   object-fit: cover;
 }
 
+.banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .home__cnt {
   margin: 80px auto 0;
 }

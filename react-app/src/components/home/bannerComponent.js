@@ -27,6 +27,7 @@ export const BannerComponent = () => {
 
                 </div>
                 <div className="banner__img">
+                    
                 </div>
             </div>
 
