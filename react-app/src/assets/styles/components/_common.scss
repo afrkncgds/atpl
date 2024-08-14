@@ -13,3 +13,46 @@
     line-height: 48px;
     letter-spacing: -0.02em;
 }
+
+.img-card__block{
+    display: flex;
+    gap: 20px;
+}
+
+.img-card{
+    h2{
+        margin: 0 0 40px;
+    }
+}
+
+.img-card__item{
+    background: linear-gradient(180deg, rgba(31, 28, 74, 0) 0%, #1F1C4A 100%);
+    width: 100%;
+    position: relative;
+    height: 420px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 32px;
+    h3{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin: 0 0 8px 0;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+    }
+}
+
+.img-card__bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
