@@ -19,11 +19,16 @@
         padding: 64px;
         background: #ffffff;
         border-radius: 16px;
+        margin: 40px 0 0;
+
     }
     .text-list__container{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-top: 1px solid #E5E7EB;
+        padding: 26px 0 0;
+        margin:16px 0 0;
         .text-list__block{
             width: 49%;
         }
@@ -81,5 +86,6 @@
         padding: 64px;
         background: #ffffff;
         border-radius: 16px;
+        margin: 40px 0 0;
     }
 }
