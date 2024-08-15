@@ -1,0 +1,86 @@
+.input-block{
+    width: 100%;
+}
+
+.input-block input, .sbx-item__slc, .input-block select, .input-block textarea{
+    width: 100%;
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+    font-size: 14px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.input-block select .disabled{
+    color: #9CA3AF;
+}
+
+.input-block textarea{
+    height: 144px;
+    padding: 12px;
+}
+
+.select{
+    position: relative;
+}
+
+.input-block label, .sbx-item label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; 
+    margin: 0 0 8px;
+    display: block;
+}
+
+.sbx-item__opn {
+    display: none;
+    position: absolute;
+    top: 68px;
+    border: 1px solid var(--black);
+    width: 100%;
+    left: 0px;
+    border-radius: 0 0 8px 8px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.sbx-item__opn_active {
+    display: block;
+}
+
+.sbx-item__opt {
+    padding: 10px 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #f3f3f3;
+    cursor: pointer;
+    color: #000;
+}
+
+.sbx-item__opt:hover {
+    background-color: #f3f3f3;
+    border-radius: 0 0 8px 8px;
+}
+
+.sbx-item__opt_not:hover {
+  background-color: transparent;
+}
+
+.sbx-item__ph {
+    color: #B0B0B0;
+    font-size: 13px;
+    font-weight: 400;
+      /*  */
+      width: 100%;
+      border: none;
+      height: 100%;
+      outline: none;
+    
+}

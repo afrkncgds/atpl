@@ -5,11 +5,9 @@ export const TextLicanceListComponent = ({data, icon, detail,title,subTitle}) =>
         <div className="text-list">
             {
                 title &&
-                <div className="title">
-                    <h3 >
-                        {title}
-                    </h3>
-                </div>
+                <h3 className="title">
+                    {title}
+                </h3>
 
             }
             {
@@ -18,11 +16,9 @@ export const TextLicanceListComponent = ({data, icon, detail,title,subTitle}) =>
             }
             {
                 subTitle &&
-                <div className="subTitle">
-                    <h4 >
-                        {subTitle}
-                    </h4>
-                </div>
+                <h4 className="subTitle">
+                    {subTitle}
+                </h4>
             }
             <div className="text-list__container">
                 <div className="text-list__block">

@@ -4,7 +4,8 @@ $purple: #676AED;
 $bannerTitle: #C8D3FD;
 $backGround:#1F1C4A;
 $bg: #EEF2FF;
-
+$lightText: #6B7280;
+$darkText: #111827;
 
 
 
@@ -12,6 +13,10 @@ h1, h2, h3, h4, h5, h6{
     color: $title;
 }
 
-p, span, input, label{
+p, span, input{
     color: $text;
+}
+
+label{
+    color: $darkText;
 }

@@ -1,0 +1,9 @@
+.gg-chevron{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+}
+
+.gg-chevron.open{
+    transform: rotate(180deg);
+}

@@ -35,6 +35,10 @@ h1 {
   font-size: 2em;
 }
 
+textarea {
+  resize: none;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -107,7 +111,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -354,8 +359,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 
-p, span, input, label {
+p, span, input {
   color: #374151;
+}
+
+label {
+  color: #111827;
 }
 
 .btn {
@@ -399,6 +408,92 @@ p, span, input, label {
   background: #EEF2FF;
 }
 
+.input-block {
+  width: 100%;
+}
+
+.input-block input, .sbx-item__slc, .input-block select, .input-block textarea {
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  font-size: 14px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.input-block select .disabled {
+  color: #9CA3AF;
+}
+
+.input-block textarea {
+  height: 144px;
+  padding: 12px;
+}
+
+.select {
+  position: relative;
+}
+
+.input-block label, .sbx-item label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 0 8px;
+  display: block;
+}
+
+.sbx-item__opn {
+  display: none;
+  position: absolute;
+  top: 68px;
+  border: 1px solid var(--black);
+  width: 100%;
+  left: 0px;
+  border-radius: 0 0 8px 8px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.sbx-item__opn_active {
+  display: block;
+}
+
+.sbx-item__opt {
+  padding: 10px 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid #f3f3f3;
+  cursor: pointer;
+  color: #000;
+}
+
+.sbx-item__opt:hover {
+  background-color: #f3f3f3;
+  border-radius: 0 0 8px 8px;
+}
+
+.sbx-item__opt_not:hover {
+  background-color: transparent;
+}
+
+.sbx-item__ph {
+  color: #B0B0B0;
+  font-size: 13px;
+  font-weight: 400;
+  /*  */
+  width: 100%;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -406,10 +501,6 @@ p, span, input, label {
 .safe-area {
   max-width: 1180px;
   margin: 0 auto;
-}
-
-.home {
-  background: #EEF2FF;
 }
 
 .page-common h2 {
@@ -429,15 +520,11 @@ p, span, input, label {
 }
 
 .img-card__item {
-  background: linear-gradient(180deg, rgba(31, 28, 74, 0) 0%, #1F1C4A 100%);
   width: 100%;
   position: relative;
   height: 420px;
   border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  padding: 32px;
+  overflow: hidden;
 }
 .img-card__item h3 {
   font-size: 32px;
@@ -453,11 +540,38 @@ p, span, input, label {
   color: #fff;
 }
 
+.img-card__text {
+  background: linear-gradient(180deg, rgba(31, 28, 74, 0) 0%, #1F1C4A 100%);
+  position: relative;
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .img-card__bg {
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
+}
+
+.content__block {
+  padding: 64px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px -3px rgba(16, 24, 40, 0.05), 0px 8px 24px -3px rgba(16, 24, 40, 0.1);
+  margin: 40px auto 0;
+}
+
+.gg-chevron {
+  position: absolute;
+  right: 12px;
+  top: 38px;
+}
+
+.gg-chevron.open {
+  transform: rotate(180deg);
 }
 
 .text-list {
@@ -474,6 +588,74 @@ p, span, input, label {
   gap: 16px;
   display: flex;
   flex-direction: column;
+}
+
+.form-block, .contact-form__item {
+  width: 100%;
+}
+
+.contact-form {
+  position: relative;
+}
+.contact-form h2 {
+  color: #111827;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  margin: 0 0 24px;
+}
+.contact-form p {
+  color: #6B7280;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto 48px;
+  max-width: 745px;
+}
+.contact-form .purple-bg {
+  height: 280px;
+  width: 100%;
+  background: #1F1C4A;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contact-form .content__block {
+  position: relative;
+}
+
+.contact-form__item {
+  max-width: 380px;
+}
+.contact-form__item .input-block:first-child {
+  margin: 0 0 24px;
+}
+
+.contact-form__block {
+  display: flex;
+  gap: 20px;
+  margin: 24px 0 0;
+}
+.contact-form__block .input-block:first-child {
+  max-width: 380px;
+}
+
+.form-info {
+  color: #9CA3AF;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0 0;
+}
+.contact-form__btn .yellow-btn {
+  padding: 14px 20px;
 }
 
 .header {
@@ -543,7 +725,8 @@ p, span, input, label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -557,7 +740,8 @@ p, span, input, label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -595,6 +779,10 @@ p, span, input, label {
   margin: 80px auto 0;
 }
 
+.home {
+  background: #EEF2FF;
+}
+
 .announcement {
   display: flex;
   align-items: center;
@@ -608,12 +796,6 @@ p, span, input, label {
   margin: 32px 0 0;
 }
 
-.licenced .licenced__block {
-  padding: 64px;
-  background: #ffffff;
-  border-radius: 16px;
-  margin: 40px 0 0;
-}
 .licenced .text-list__container {
   display: flex;
   align-items: center;
@@ -625,7 +807,7 @@ p, span, input, label {
 .licenced .text-list__container .text-list__block {
   width: 49%;
 }
-.licenced .text-list .title h3 {
+.licenced .text-list .title {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -633,21 +815,15 @@ p, span, input, label {
 }
 .licenced .text-list .detail {
   margin: 12px 0 0;
-}
-.licenced .text-list .detail p {
   color: #6B7280;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 400;
 }
 .licenced .text-list .subTitle {
-  margin: 32px 0 0;
-}
-.licenced .text-list .subTitle h4 {
   color: #3F36BA;
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
+  margin: 32px 0 0;
 }
 .licenced .text-list__block {
   margin: 0;
@@ -655,13 +831,4 @@ p, span, input, label {
 
 .text-list__item img {
   margin: 0 12px 0 0;
-}
-
-.bussiness .bussiness__block {
-  padding: 64px;
-  background: #ffffff;
-  border-radius: 16px;
-  margin: 40px 0 0;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

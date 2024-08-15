@@ -4,6 +4,7 @@ import { MainFeaturesComponent } from '../components/home/mainFeaturesComponent'
 import { LicenceFeaturesComponent } from '../components/home/licenceFeaturesComponent';
 import { ImgCardComponent } from '../components/card/imgCardComponent';
 import {BussinessSliderComponent} from "../components/home/bussinessSliderComponent";
+import { ContactFormComponent } from '../components/form/contactFormComponent';
 
 const HomePage = () => {
     const benefitArr = [
@@ -30,7 +31,7 @@ const HomePage = () => {
             <ImgCardComponent classN={"home__cnt safe-area"} title={"Benefits of LMS"} data={benefitArr}/>
             <LicenceFeaturesComponent/>
             <BussinessSliderComponent/>
-
+            <ContactFormComponent title={"Join Our LMS"} text="We offer reliable Learning Management System that completely fulfills the requirements from authorities. User friendly interface, easy to read reports and built-in guidance will simplify your learning flow."/>
 
         </div>
     );
