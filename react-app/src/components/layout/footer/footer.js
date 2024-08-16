@@ -3,7 +3,7 @@ import {LogoComponent} from "../../common/logoComponent";
 import {MenuComponent} from "../../common/menuComponent";
 import {SvgImgComponent} from "../../img/svgImgComponent";
 
-const Footer = ({ icon}) => {
+const Footer = ({ img}) => {
     const footerMenuArr = ["About LMS","FAQ","Contact Us","Atplquestions.com"]
     return(
         <div className='footer'>
@@ -15,20 +15,32 @@ const Footer = ({ icon}) => {
                 </div>
                 <div className="footer-bottom-container">
                     <div className="social-menu">
-                        <div className="social-item">
-                            {
-                                icon &&
-                                <SvgImgComponent icon={"fb.svg"} alt={"icon"}/>
+                        <a href="/" className="social-item">
 
-                            }
+                                <SvgImgComponent img={"fb.svg"} alt={"icon"}/>
 
+
+
+                        </a>
+                        <a href="/" className="social-item">
+                            <SvgImgComponent img={"tw.svg"} alt={"icon"}/>
+
+                        </a>
+                        <a href="/" className="social-item">
+                            <SvgImgComponent img={"insta.svg"} alt={"icon"}/>
+
+                        </a>
+                    </div>
+                    <div className="copy-right-block">
+                        <div className="copy-right-item">
+                            <a href="/">
+                                Terms & Conditions
+                            </a>
                         </div>
-                        <div className="social-item">
-                            <SvgImgComponent icon={"tw.svg"} alt={"icon"}/>
-
-                        </div>
-                        <div className="social-item">
-                            <SvgImgComponent icon={"insta.svg"} alt={"icon"}/>
+                        <div className="copy-right-item">
+                            <span>
+                                Copyright © 2017 - 2024 ATPLQuestions
+                            </span>
 
                         </div>
                     </div>
