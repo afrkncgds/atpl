@@ -111,7 +111,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -423,6 +424,9 @@ label {
   -webkit-appearance: none;
 }
 
+.input-block select {
+  cursor: pointer;
+}
 .input-block select .disabled {
   color: #9CA3AF;
 }
@@ -493,6 +497,16 @@ label {
   outline: none;
 }
 
+.input-block.err input, .input-block.err select, .input-block.err textarea {
+  border: 1px solid #EF4444;
+  margin: 0 0 8px 0;
+}
+.input-block.err .err-text {
+  color: #EF4444;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -524,6 +538,13 @@ label {
   height: 420px;
   border-radius: 16px;
   overflow: hidden;
+  cursor: pointer;
+}
+.img-card__item img {
+  transition: transform 0.2s;
+}
+.img-card__item:hover img {
+  transform: scale(1.2);
 }
 .img-card__item h3 {
   font-size: 32px;
@@ -563,7 +584,30 @@ label {
   margin: 40px auto 0;
 }
 
-.gg-chevron {
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .slider__btn {
+  padding: 8px;
+  max-height: 38px;
+  border: 1px solid #FFC100;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  cursor: pointer;
+}
+.slider .slider__btn:hover svg {
+  stroke: #BB6A02;
+}
+.slider .slider__block {
+  gap: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.input-block .gg-chevron {
   position: absolute;
   right: 12px;
   top: 38px;
@@ -571,6 +615,12 @@ label {
 
 .gg-chevron.open {
   transform: rotate(180deg);
+}
+.gg-chevron.r {
+  transform: rotate(270deg);
+}
+.gg-chevron.l {
+  transform: rotate(90deg);
 }
 
 .text-list {
@@ -689,7 +739,8 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -840,7 +891,8 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -854,7 +906,8 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -946,6 +999,10 @@ label {
   margin: 0 12px 0 0;
 }
 
+.bussiness .content__block {
+  padding: 0 40px;
+}
+
 @media only screen and (max-width: 1200px) {
   .header {
     padding: 16px 11px;
@@ -981,11 +1038,10 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

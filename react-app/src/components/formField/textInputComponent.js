@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TextInputComponent = ({input, type, label, placeholder, meta: { error, touched }, max, disabled}) => {
+export const TextInputComponent = ({ input, type, label, placeholder, meta: { error, touched }, max, disabled, errText }) => {
     return (
         <div
             className={`input-block ${touched && error ? "err" : ""}`}
@@ -15,6 +15,12 @@ export const TextInputComponent = ({input, type, label, placeholder, meta: { err
                 maxLength={max}
                 placeholder={placeholder}
             />
+            {
+                error &&
+                <span className='err-text'>
+                    {errText || "Error text"}
+                </span>
+            }
         </div>
     );
 }

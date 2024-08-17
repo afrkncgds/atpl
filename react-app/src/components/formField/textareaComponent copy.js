@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TextAreaComponent = ({ input, label, placeholder, meta: { error, touched } }) => {
+export const TextAreaComponent = ({ input, label, placeholder, errText, meta: { error, touched } }) => {
     return (
         <div
             className={`input-block ${touched && error ? "err" : ""}`}
@@ -12,6 +12,12 @@ export const TextAreaComponent = ({ input, label, placeholder, meta: { error, to
                 name={input.name}
                 placeholder={placeholder}
             />
+            {
+                error &&
+                <span className='err-text'>
+                    {errText || "Error text"}
+                </span>
+            }
         </div>
     );
 }

@@ -14,8 +14,11 @@
     -webkit-appearance: none;
 }
 
-.input-block select .disabled{
-    color: #9CA3AF;
+.input-block select{
+    cursor: pointer;
+    .disabled{
+        color: #9CA3AF;
+    }
 }
 
 .input-block textarea{
@@ -83,4 +86,16 @@
       height: 100%;
       outline: none;
     
+}
+
+.input-block.err{
+    input, select, textarea{
+        border: 1px solid $red;
+        margin: 0 0 8px 0;
+    }
+    .err-text{
+        color: $red;
+        font-size: 14px;
+        line-height: 16px; 
+    }
 }

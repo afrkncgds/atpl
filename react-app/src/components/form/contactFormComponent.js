@@ -47,9 +47,10 @@ export const ContactFormComponent = ({ title, text }) => {
                                     type='selectbox'
                                     options={[
                                         { value: 'option0', label: 'Select Subject' },
-                                        { value: 'option1', label: 'Option 1' },
-                                        { value: 'option2', label: 'Option 2' },
-                                        { value: 'option3', label: 'Option 3' },
+                                        { value: 'option1', label: 'LMS Demo Request' },
+                                        { value: 'option2', label: 'LMS Student Subscriptions' },
+                                        { value: 'option3', label: 'LMS Registration Request' },
+                                        { value: 'option4', label: 'Other' }
                                     ]}
                                 />
                             </div>
