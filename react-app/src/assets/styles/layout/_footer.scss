@@ -1,6 +1,28 @@
 .footer{
   background: $backGround;
   padding: 48px 0;
+  .menu-list{
+    display: flex;
+    align-items: center;
+    .menu-item{
+      margin: 0 0 0 48px;
+      &:first-child{
+        margin: 0;
+      }
+      span{
+        color: white;
+        font-size: 16px;
+      }
+      &:hover{
+        span{
+          color: #FFF985;
+        }
+      }
+    }
+    .yellow-btn{
+      margin: 0 0 0 48px;
+    }
+  }
 }
 .footer-top-container{
   border-bottom: 1px solid #9CA3AF;
@@ -12,6 +34,12 @@
   .menu-list{
     .yellow-btn{
       display: none;
+    }
+    .menu-item{
+      span{
+        color: #FFC100;
+
+      }
     }
   }
 }
@@ -40,6 +68,10 @@
         font-weight: 400;
         color:#EEF2FF;
         line-height: 20px;
+        &:hover{
+          color:  #FFC100;
+        ;
+        }
       }
     span{
       font-size: 14px;

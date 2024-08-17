@@ -15,7 +15,7 @@ export const MenuComponent = ({ data, btnText, icon }) => {
                 ))
             }
             <ButtonComponent btnText={btnText} icon={icon} classN={"yellow-btn"}/>
-            <MobileMenuComponent />
+            <MobileMenuComponent data={data}/>
         </div>
     )
 }
