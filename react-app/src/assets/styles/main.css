@@ -1173,6 +1173,23 @@ label {
   transform: rotate(180deg);
 }
 
+.contactUs {
+  margin: 0 auto 48px;
+}
+
+.contact__cnt {
+  margin: 40px 0 0;
+}
+.contact__cnt .title-item {
+  margin: 0 0 24px;
+}
+.contact__cnt .title-item h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #111827;
+}
+
 .termCondition {
   margin: 0 auto 48px;
 }

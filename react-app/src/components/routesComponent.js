@@ -11,8 +11,10 @@ import TermCondition from "../pages/termCondition";
 
 
 function RoutesComponent() {
+    const user=true;
   return (
     <div>
+
       <Header />
           <Routes>
             <Route exact path={HOME_PAGE} element={<HomePage />} />
