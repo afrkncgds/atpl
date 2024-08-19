@@ -13,7 +13,10 @@ export const MainFeaturesComponent = () => {
                 <TextListComponent data={listArr} detail="Basically you can manage everything about your student and students’ progress." icon={"tick.svg"} />
                 <ButtonComponent btnText={"Contact Us"} classN={"yellow-btn"}/>
             </div>
-            <ImgComponent img={"/img/home/announcement.png"} alt={"announcement"} />
+            <div className="img__block">
+                <ImgComponent img={"/img/home/announcement.png"} alt={"announcement"} />
+
+            </div>
         </section>
     );
 }

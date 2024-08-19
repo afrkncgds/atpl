@@ -11,5 +11,52 @@
     }
   }
 }
+  .banner{
+    padding: 32px 24px 24px 24px;
+  }
+  .home__cnt{
+    padding: 40px 11px;
+    margin: 0;
+  }
+  .footer{
+    padding: 48px 11px;
+  }
+
+}
+@media only screen   and (max-width:1024px)  {
+  .banner{
+    height: auto;
+  }
+  .banner__text{
+    max-width: 100%;
+    text-align:center;
+  }
+  .banner__img{
+    width: 100%;
+  }
+  .banner__content{
+    flex-direction: column;
+
+  }
+
+
+}
+@media only screen   and (max-width:991px)  {
+  .banner__text{
+    .text__content{
+      p{
+        font-size: 32px;
+      }
+    }
+  }
+ .home__cnt{
+   .img__block{
+     display: none;
+   }
+   .announcement__block{
+     width: 100%;
+   }
+ }
+
 
 }

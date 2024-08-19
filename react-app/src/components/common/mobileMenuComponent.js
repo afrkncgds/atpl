@@ -1,7 +1,7 @@
 
 
 export const MobileMenuComponent = ({data}) => {
-    const open = true;
+    const open = false;
     return(
         <div className="mobile-menu">
             <div className="icon-item">
