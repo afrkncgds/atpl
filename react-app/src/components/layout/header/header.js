@@ -5,7 +5,25 @@ import {LogoComponent} from "../../common/logoComponent";
 import {MenuComponent} from "../../common/menuComponent";
 
 const Header = ()=> {
-    const menuArr = ["Home","About LMS","FAQ","Contact Us"]
+
+    const menuArr = [
+        {
+        name:"Home",
+        link:"/"
+        },
+        {
+            name:"About LMS",
+            link:"about-us"
+        },
+        {
+            name:"FAQ",
+            link: "faq"
+        },
+        {
+            name:"Contact Us",
+            link:"contact-us"
+        }
+    ]
 
 
     return(

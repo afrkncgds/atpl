@@ -29,11 +29,11 @@ export const MobileMenuComponent = ({data}) => {
                     <div className="mobile-list-menu">
                         {
                             data.map ((item , key) =>(
-                                <a href="/" className="list-item">
+                                <a href={item.link} className="list-item">
 
                                     <div className="text-item">
                                    <span>
-                                       {item}
+                                       {item.name}
                                    </span>
                                     </div>
                                     <div className="icon-item">

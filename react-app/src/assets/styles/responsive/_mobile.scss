@@ -67,6 +67,32 @@
       }
     }
   }
+  .announcement{
+    .yellow-btn{
+      width: 100%;
+    }
+  }
+  .licenced{
+    .text-list__container{
+      flex-direction: column;
+      align-items: flex-start;
+      .text-list__block{
+        width: 100%;
+        margin: 12px 0 0;
+        gap: 12px;
+        &:first-child{
+          margin: 0;
+        }
+      }
+
+
+    }
+
+  }
+  .content__block{
+    padding: 20px;
+  }
+
 
 
 

@@ -14,19 +14,21 @@
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
+    padding: 0 0 48px;
+    margin: 0 0 48px;
     .mask-block{
       position: absolute;
       left: -48px;
       bottom: 0;
       border-radius: 16px;
      background: #E1E7FE;
-      height: 286px;
+      height: 288px;
       width: 108%;
 
     }
   }
   .text-container{
-    width: 40%;
+    width: 49.2%;
     height: 432px;
     display: flex;
     flex-direction: column;
@@ -35,8 +37,22 @@
     z-index: 1;
     .text-item{
       margin: 96px 0 0;
+      p{
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+        color:#111827;
+      }
       &:first-child{
         margin: 0;
+      }
+      &.strong{
+        p{
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 32px;
+          color:#111827;
+        }
       }
     }
 

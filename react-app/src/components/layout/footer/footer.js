@@ -7,15 +7,15 @@ const Footer = ({ img}) => {
     const footerMenuArr = [
         {
             name: "About LMS",
-            link: "/" 
+            link: "about-us"
         },
         {
             name: "FAQ",
-            link: "/" 
+            link: "faq"
         },
         {
             name: "Contact Us",
-            link: "/" 
+            link: "contact-us"
         },
         {
             name: "Atplquestions.com",
@@ -50,7 +50,7 @@ const Footer = ({ img}) => {
                     </div>
                     <div className="copy-right-block">
                         <div className="copy-right-item">
-                            <a href="/">
+                            <a href="/termCondition">
                                 Terms & Conditions
                             </a>
                         </div>
