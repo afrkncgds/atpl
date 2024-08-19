@@ -1032,8 +1032,52 @@ label {
   padding: 0 40px;
 }
 
-.aboutUs-wrapper {
+.about__cnt {
   margin: 40px 0 0;
+}
+.about__cnt .title-item {
+  margin: 0 0 24px;
+}
+.about__cnt .title-item h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #111827;
+}
+.about__cnt .about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+.about__cnt .about-wrapper .mask-block {
+  position: absolute;
+  left: -48px;
+  bottom: 0;
+  border-radius: 16px;
+  background: #E1E7FE;
+  height: 286px;
+  width: 108%;
+}
+.about__cnt .text-container {
+  width: 40%;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1;
+}
+.about__cnt .text-container .text-item {
+  margin: 96px 0 0;
+}
+.about__cnt .text-container .text-item:first-child {
+  margin: 0;
+}
+.about__cnt .image-container {
+  width: 480px;
+  height: 432px;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1200px) {

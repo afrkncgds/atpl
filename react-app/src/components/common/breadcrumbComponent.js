@@ -1,6 +1,6 @@
 import { SvgImgComponent } from "../img/svgImgComponent"
 
-export const BreadcrumbComponent = () => {
+export const BreadcrumbComponent = ({title}) => {
     return(
         <div className="breadcrumb safe-area">
             <div className="icon-item">
@@ -22,7 +22,7 @@ export const BreadcrumbComponent = () => {
 
             </div>
             <div className="text-item">
-            <span>About Us</span>
+            <span>{title}</span>
             </div>
 
 

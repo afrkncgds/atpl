@@ -1,3 +1,49 @@
-.aboutUs-wrapper{
+.about__cnt{
   margin: 40px 0 0;
+  .title-item{
+    margin: 0 0 24px;
+    h1{
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+      color: #111827;
+    }
+  }
+  .about-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    .mask-block{
+      position: absolute;
+      left: -48px;
+      bottom: 0;
+      border-radius: 16px;
+     background: #E1E7FE;
+      height: 286px;
+      width: 108%;
+
+    }
+  }
+  .text-container{
+    width: 40%;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+    .text-item{
+      margin: 96px 0 0;
+      &:first-child{
+        margin: 0;
+      }
+    }
+
+  }
+  .image-container{
+    width: 480px;
+    height: 432px;
+    z-index: 1;
+  }
 }
