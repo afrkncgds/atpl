@@ -6,12 +6,13 @@ import {MenuComponent} from "../../common/menuComponent";
 
 const Header = ()=> {
     const menuArr = ["Home","About LMS","FAQ","Contact Us"]
+    const linkArrr=["/","/ABOUT_US","/"," /"]
 
     return(
         <header className="header">
             <div className="header--wrapper safe-area">
                 <LogoComponent icon={"logo.svg"}/>
-                <MenuComponent data={menuArr} btnText={"Log in LMS"} icon={"user.svg"}/>
+                <MenuComponent link={linkArrr} data={menuArr} btnText={"Log in LMS"} icon={"user.svg"}/>
             </div>
         </header>
     )
