@@ -1058,6 +1058,7 @@ label {
 }
 .about__cnt .about-wrapper .mask-block {
   position: absolute;
+  display: block;
   left: -48px;
   bottom: 0;
   border-radius: 16px;
@@ -1093,9 +1094,9 @@ label {
   color: #111827;
 }
 .about__cnt .image-container {
-  width: 480px;
-  height: 432px;
+  aspect-ratio: 480/432;
   z-index: 1;
+  margin: 0 -16px 0 0;
 }
 .about__cnt .content-container .text-block {
   margin: 20px 0 0;
@@ -1170,6 +1171,60 @@ label {
 }
 .faq__cnt .faq-block.open .title-item svg {
   transform: rotate(180deg);
+}
+
+.termCondition {
+  margin: 0 auto 48px;
+}
+
+.term__cnt {
+  margin: 48px 0;
+}
+.term__cnt .title-item {
+  margin: 0 0 40px;
+}
+.term__cnt .title-item h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #111827;
+}
+
+.term__wrapper .title-item {
+  margin: 40px 0 16px;
+}
+.term__wrapper .content-container .title-item h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #111827;
+}
+.term__wrapper .content-container .title-item span {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #111827;
+  margin: 0 0 0 8px;
+}
+.term__wrapper .content-container .content-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111827;
+  margin: 0 0 16px;
+}
+.term__wrapper .content-container .content-item p:first-child {
+  margin: 0 0 16px 0;
+}
+.term__wrapper .content-container .content-item p:last-child {
+  margin: 0;
+}
+.term__wrapper .content-container .content-item p span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #111827;
+  margin: 0 8px 0 0;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -2,6 +2,7 @@ import React from 'react';
 import {LogoComponent} from "../../common/logoComponent";
 import {MenuComponent} from "../../common/menuComponent";
 import {SvgImgComponent} from "../../img/svgImgComponent";
+import {TERM_CONDITION} from "../../../constants/routePaths";
 
 const Footer = ({ img}) => {
     const footerMenuArr = [
@@ -50,7 +51,7 @@ const Footer = ({ img}) => {
                     </div>
                     <div className="copy-right-block">
                         <div className="copy-right-item">
-                            <a href="/termCondition">
+                            <a href={TERM_CONDITION}>
                                 Terms & Conditions
                             </a>
                         </div>

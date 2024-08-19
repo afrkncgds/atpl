@@ -1,9 +1,11 @@
 import React from 'react';
 import {BreadcrumbComponent} from "../components/common/breadcrumbComponent";
 import {TitleComponent} from "../components/common/titleComponent";
+import {ImgComponent} from "../components/img/imgComponent";
 
 
 const AboutUs = () => {
+
 
     return (
         <div className='aboutUs page-common safe-area'>
@@ -31,15 +33,16 @@ const AboutUs = () => {
                         </div>
 
                     </div>
-                    <div className="image-container">{
-
-                    }
-                </div>
+                    <div className="image-container">
+                        <ImgComponent img={"/img/about/about-img.png"}/>
+                    </div>
                     <div className="mask-block"/>
-
-
-
                 </div>
+
+
+
+
+
                 <div className="content-container">
                     <div className="text-block">
                         <p>

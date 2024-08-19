@@ -3,6 +3,7 @@
 }
 .about__cnt{
   margin: 40px 0 0;
+
   .title-item{
     margin: 0 0 24px;
     h1{
@@ -21,15 +22,17 @@
     margin: 0 0 48px;
     .mask-block{
       position: absolute;
+      display: block;
       left: -48px;
       bottom: 0;
       border-radius: 16px;
-     background: #E1E7FE;
+      background: #E1E7FE;
       height: 288px;
       width: 108%;
 
     }
   }
+
   .text-container{
     width: 49.2%;
     height: 432px;
@@ -61,9 +64,9 @@
 
   }
   .image-container{
-    width: 480px;
-    height: 432px;
+    aspect-ratio: 480/432;
     z-index: 1;
+    margin:0 -16px 0 0;
   }
   .content-container{
     .text-block{
