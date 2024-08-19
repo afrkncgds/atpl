@@ -3,8 +3,7 @@
     padding: 16px 11px;
     .menu-list{
       .menu-item{
-       display: none;
-
+        display: none;
       }
       .yellow-btn{
         margin: 0;
@@ -18,7 +17,6 @@
       }
     }
     .logo-item{
-
       width: 179px;
       height: 32px;
       img{
@@ -26,17 +24,60 @@
         height: 100%;
         object-fit: contain;
       }
-
     }
     .mobile-menu{
       display: block;
     }
   }
-  .footer-top-container{
-    flex-direction: column;
-    align-items: flex-start;
-
+  .announcement{
+    .yellow-btn{
+      width: 100%;
+    }
   }
+  .licenced{
+    .text-list__container{
+      flex-direction: column;
+      align-items: flex-start;
+      .text-list__block{
+        width: 100%;
+        margin: 12px 0 0;
+        gap: 12px;
+        &:first-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .content__block{
+    padding: 20px;
+  }
+  .contact-form{
+    .content__block{
+      padding: 24px 20px;
+    }
+  }
+  .contact-form{
+    h2, p{
+      text-align: start;
+    }
+    h2{
+      margin: 0 0 16px;
+    }
+    p{
+      margin: 0 0 40px;
+    }
+  }
+}
+
+@media only screen   and (max-width:700px){
+  .announcement{
+    .img__block{
+      display: none;
+    }
+  }
+}
+
+@media only screen   and (max-width:640px){
   .footer-bottom-container{
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -58,7 +99,6 @@
     .menu-list{
       flex-direction: column;
       align-items: flex-start;
-      margin: 32px 0 0;
       .menu-item{
         margin:16px 0 0 0;
         &:first-child{
@@ -67,33 +107,25 @@
       }
     }
   }
-  .announcement{
-    .yellow-btn{
-      width: 100%;
+  .img-card__block{
+    .img-card__item{
+      min-width: 272px; 
+      height: 300px;
     }
   }
-  .licenced{
-    .text-list__container{
-      flex-direction: column;
-      align-items: flex-start;
-      .text-list__block{
-        width: 100%;
-        margin: 12px 0 0;
-        gap: 12px;
-        &:first-child{
-          margin: 0;
-        }
-      }
-
-
+  .img-card__item{
+    h3{
+      font-size: 24px;
+      line-height: 32px; 
+      margin: 0 0 2px 0;
+      letter-spacing: -0.48px;
     }
-
+    p{
+      font-size: 14px;
+      line-height: 20px; 
+    }
   }
-  .content__block{
-    padding: 20px;
+  .img-card__text{
+    padding: 22px;
   }
-
-
-
-
 }

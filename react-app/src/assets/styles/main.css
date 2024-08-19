@@ -111,7 +111,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -605,6 +606,11 @@ label {
   display: flex;
   align-items: center;
 }
+.slider .slider__container {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow: hidden;
+}
 
 .breadcrumb {
   display: flex;
@@ -696,15 +702,16 @@ label {
   max-width: 745px;
 }
 .contact-form .purple-bg {
-  height: 280px;
+  height: 328px;
   width: 100%;
   background: #1F1C4A;
   position: absolute;
-  bottom: 0;
+  bottom: -48px;
   left: 0;
 }
 .contact-form .content__block {
   position: relative;
+  padding: 64px;
 }
 
 .contact-form__item {
@@ -771,7 +778,8 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -922,7 +930,8 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -936,7 +945,8 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1030,6 +1040,25 @@ label {
 
 .bussiness .content__block {
   padding: 0 40px;
+}
+
+.home__form {
+  position: relative;
+  padding: 270px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.home__form .contact-form {
+  width: 100%;
+}
+
+.home__planet {
+  position: absolute;
+  top: 80px;
+}
+
+.contactUs .contact-form .content__block {
+  padding: 48px;
 }
 
 .aboutUs {
@@ -1244,7 +1273,7 @@ label {
   margin: 0 8px 0 0;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .header {
     padding: 16px 11px;
   }
@@ -1257,17 +1286,33 @@ label {
   .banner {
     padding: 32px 24px 24px 24px;
   }
-  .home__cnt {
-    padding: 40px 11px;
-    margin: 0;
+  .safe-area {
+    padding: 0 32px;
   }
   .footer {
     padding: 48px 11px;
+  }
+  .contact__form {
+    padding: 0 32px;
+  }
+  .slider .slider__container {
+    margin: 0 12px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .contact-form .content__block {
+    margin: 40px 32px 0;
   }
 }
 @media only screen and (max-width: 1024px) {
   .banner {
     height: auto;
+  }
+  .banner .text__title {
+    margin: 0 0 8px;
+  }
+  .banner .text__content {
+    margin: 0 0 24px;
   }
   .banner__text {
     max-width: 100%;
@@ -1284,11 +1329,65 @@ label {
   .banner__text .text__content p {
     font-size: 32px;
   }
-  .home__cnt .img__block {
-    display: none;
-  }
   .home__cnt .announcement__block {
     width: 100%;
+  }
+  .announcement .img__block img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .img-card__block {
+    overflow: hidden;
+  }
+  .img-card__block .img-card__item {
+    min-width: 380px;
+  }
+  .home__planet {
+    max-width: 480px;
+  }
+  .home__planet img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home__form {
+    padding: 190px 0 0;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .home__cnt {
+    margin: 56px 0 0;
+  }
+  .img-card h2 {
+    margin: 0 0 24px;
+  }
+  .content__block {
+    margin: 32px auto 0;
+  }
+  .contact-form__block {
+    flex-direction: column;
+  }
+  .contact-form__block .input-block:first-child {
+    max-width: none;
+  }
+  .contact-form__item {
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .footer-top-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .menu-list {
+    margin: 32px 0 0;
+  }
+  .img-card__block .img-card__item {
+    min-width: 320px;
+    height: 360px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1315,15 +1414,49 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
   }
-  .footer-top-container {
+  .announcement .yellow-btn {
+    width: 100%;
+  }
+  .licenced .text-list__container {
     flex-direction: column;
     align-items: flex-start;
   }
+  .licenced .text-list__container .text-list__block {
+    width: 100%;
+    margin: 12px 0 0;
+    gap: 12px;
+  }
+  .licenced .text-list__container .text-list__block:first-child {
+    margin: 0;
+  }
+  .content__block {
+    padding: 20px;
+  }
+  .contact-form .content__block {
+    padding: 24px 20px;
+  }
+  .contact-form h2, .contact-form p {
+    text-align: start;
+  }
+  .contact-form h2 {
+    margin: 0 0 16px;
+  }
+  .contact-form p {
+    margin: 0 0 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .announcement .img__block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
   .footer-bottom-container {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -1344,7 +1477,6 @@ label {
   .footer .menu-list {
     flex-direction: column;
     align-items: flex-start;
-    margin: 32px 0 0;
   }
   .footer .menu-list .menu-item {
     margin: 16px 0 0 0;
@@ -1352,24 +1484,21 @@ label {
   .footer .menu-list .menu-item:first-child {
     margin: 0;
   }
-  .announcement .yellow-btn {
-    width: 100%;
+  .img-card__block .img-card__item {
+    min-width: 272px;
+    height: 300px;
   }
-  .licenced .text-list__container {
-    flex-direction: column;
-    align-items: flex-start;
+  .img-card__item h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 2px 0;
+    letter-spacing: -0.48px;
   }
-  .licenced .text-list__container .text-list__block {
-    width: 100%;
-    margin: 12px 0 0;
-    gap: 12px;
+  .img-card__item p {
+    font-size: 14px;
+    line-height: 20px;
   }
-  .licenced .text-list__container .text-list__block:first-child {
-    margin: 0;
+  .img-card__text {
+    padding: 22px;
   }
-  .content__block {
-    padding: 20px;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

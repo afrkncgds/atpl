@@ -1,4 +1,4 @@
-@media only screen   and (max-width:1200px)  {
+@media only screen   and (max-width:1300px)  {
 .header{
   padding: 16px 11px;
   .menu-list{
@@ -7,25 +7,44 @@
       &:first-child{
         margin: 0;
       }
-
     }
   }
 }
   .banner{
     padding: 32px 24px 24px 24px;
   }
-  .home__cnt{
-    padding: 40px 11px;
-    margin: 0;
+  .safe-area{
+    padding: 0 32px; 
   }
   .footer{
     padding: 48px 11px;
   }
-
+  .contact__form{
+    padding: 0 32px;
+  }
+  .slider{
+    .slider__container{
+      margin: 0 12px;
+    }
+  }
 }
+@media only screen   and (max-width:1240px)  {
+  .contact-form{
+    .content__block{
+      margin: 40px 32px 0;
+    }
+  }
+}
+
 @media only screen   and (max-width:1024px)  {
   .banner{
     height: auto;
+    .text__title{
+      margin: 0 0 8px;
+    }
+    .text__content{
+      margin: 0 0 24px;
+    }
   }
   .banner__text{
     max-width: 100%;
@@ -50,13 +69,72 @@
     }
   }
  .home__cnt{
-   .img__block{
-     display: none;
-   }
    .announcement__block{
      width: 100%;
    }
  }
+  .announcement{
+    .img__block{
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .img-card__block{
+    overflow: hidden;
+    .img-card__item{
+      min-width: 380px;
+    }
+  }
+  .home__planet{
+    max-width: 480px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .home__form{
+    padding: 190px 0 0;
+  }
+}
 
-
+@media only screen   and (max-width:860px){
+  .home__cnt{
+    margin: 56px 0 0;
+  }
+  .img-card h2{
+    margin: 0 0 24px;
+  }
+  .content__block{
+    margin: 32px auto 0;
+  }
+  .contact-form__block{
+    flex-direction: column;
+    .input-block:first-child{
+      max-width: none;
+    }
+  }
+  .contact-form__item{
+    max-width: none;
+  }
+} 
+@media only screen and (max-width:830px) {
+  .footer-top-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer{
+    .menu-list{
+      margin: 32px 0 0;
+    }
+  }
+  .img-card__block{
+    .img-card__item{
+      min-width: 320px;
+      height: 360px;
+    }
+  }
 }

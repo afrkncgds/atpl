@@ -22,16 +22,17 @@
         max-width: 745px;
     }
     .purple-bg{
-        height: 280px;
+        height: 328px;
         width: 100%;
         background: $backGround;
         position: absolute;
-        bottom: 0;
+        bottom: -48px;
         left: 0;
         
     }
     .content__block{
         position: relative;
+        padding: 64px;
     }
 }
 

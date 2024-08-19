@@ -69,3 +69,26 @@
     }
 }
 
+.home__form{
+    position: relative;
+    padding: 270px 0 0;
+    display: flex;
+    justify-content: center;
+    .contact-form{
+        width: 100%;
+    }
+}
+
+.home__planet{
+    position: absolute;
+    top: 80px;
+}
+
+.contactUs{
+    .contact-form{
+        .content__block{
+            padding: 48px;
+        }
+    }
+}
+

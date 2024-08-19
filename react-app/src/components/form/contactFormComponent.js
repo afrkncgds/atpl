@@ -5,7 +5,7 @@ import { ButtonComponent } from '../button/buttonComponent';
 import { TextAreaComponent } from '../formField/textareaComponent copy';
 import { SelectBoxComponent } from '../formField/selectboxComponent';
 
-export const ContactFormComponent = ({ title, text }) => {
+export const ContactFormComponent = ({ title, text, isBg=true }) => {
     const validate = (values) => {
         const errors = {};
 
@@ -18,7 +18,10 @@ export const ContactFormComponent = ({ title, text }) => {
 
     return (
         <section className='contact-form'>
-            <div className='purple-bg'></div>
+            {
+                isBg &&
+                <div className='purple-bg'></div>
+            }
             <div className='content__block safe-area'>
                 {
                     title &&
