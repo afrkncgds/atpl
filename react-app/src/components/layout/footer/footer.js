@@ -4,7 +4,24 @@ import {MenuComponent} from "../../common/menuComponent";
 import {SvgImgComponent} from "../../img/svgImgComponent";
 
 const Footer = ({ img}) => {
-    const footerMenuArr = ["About LMS","FAQ","Contact Us","Atplquestions.com"]
+    const footerMenuArr = [
+        {
+            name: "About LMS",
+            link: "/" 
+        },
+        {
+            name: "FAQ",
+            link: "/" 
+        },
+        {
+            name: "Contact Us",
+            link: "/" 
+        },
+        {
+            name: "Atplquestions.com",
+            link: "/" 
+        }
+    ]
     return(
         <div className='footer'>
             <div className="footer-wrapper safe-area">

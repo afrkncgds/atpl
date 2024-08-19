@@ -6,9 +6,9 @@ export const MenuComponent = ({ data, btnText, icon }) => {
         <div className="menu-list">
             {
                 data.map((item, key) => (
-                    <a href="/"  className="menu-item" key={key}>
+                    <a href={item.link}  className="menu-item" key={key}>
                         {
-                            <span>{item}</span>
+                            <span>{item.name}</span>
                         }
 
                     </a>
