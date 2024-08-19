@@ -1,12 +1,12 @@
 import { ButtonComponent } from "../button/buttonComponent"
 import {MobileMenuComponent} from "./mobileMenuComponent";
 
-export const MenuComponent = ({ data, btnText, icon,link }) => {
+export const MenuComponent = ({ data, btnText, icon }) => {
     return (
         <div className="menu-list">
             {
                 data.map((item, key) => (
-                    <a href="/" link={item.link} className="menu-item" key={key}>
+                    <a href="/"  className="menu-item" key={key}>
                         {
                             <span>{item}</span>
                         }
