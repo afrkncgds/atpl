@@ -1060,7 +1060,7 @@ label {
   position: absolute;
   display: block;
   left: -48px;
-  bottom: 0;
+  bottom: 48px;
   border-radius: 16px;
   background: #E1E7FE;
   height: 288px;
