@@ -35,9 +35,9 @@ const AboutUs = () => {
 
                     }
                 </div>
-                    <div className="mask-block">
+                    <div className="mask-block"/>
 
-                    </div>
+
 
                 </div>
                 <div className="content-container">
@@ -70,6 +70,14 @@ const AboutUs = () => {
                     <div className="text-block">
                         <p>
                             Thank you for choosing ATPL Questions(ATPLQ) as your trusted partner in ATPL exam preparation. Together, let's soar to new heights of knowledge, proficiency, and success in the world of aviation.
+                        </p>
+                    </div>
+                    <div className="text-block strong">
+                        <p>
+                            Sincerely,
+                        </p>
+                        <p>
+                            The ATPL Questions Team
                         </p>
                     </div>
 
