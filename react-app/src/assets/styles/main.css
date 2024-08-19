@@ -1096,7 +1096,7 @@ label {
 .about__cnt .image-container {
   aspect-ratio: 480/432;
   z-index: 1;
-  margin: 0 -16px 0 0;
+  margin: 0 -20px 0 0;
 }
 .about__cnt .content-container .text-block {
   margin: 20px 0 0;
