@@ -49,7 +49,7 @@
     }
   }
   .content__block{
-    padding: 20px;
+    padding: 24px 20px;
   }
   .contact-form{
     .content__block{
@@ -65,6 +65,12 @@
     }
     p{
       margin: 0 0 40px;
+    }
+  }
+  .page-common{
+    h2{
+      font-size: 32px;
+      line-height: 40px;
     }
   }
 }
@@ -131,5 +137,134 @@
   .safe-area{
     padding: 0 11px;
   }
+  .home__form{
+    padding: 174px 0 0;
+  }
+  .contact-form{
+    .content__block {
+      margin: 0 11px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .home__planet {
+    top: 64px;
+  }
+  .input-block input, .sbx-item__slc, .input-block select{
+    height: 40px;
+  }
+  .input-block .gg-chevron{
+    top: 34px;
+  }
+  .input-block textarea {
+    height: 160px;
+  }
+}
 
+@media only screen and (max-width: 560px){
+  .home__cnt {
+    margin: 40px 0 0;
+  }
+  .banner{
+    .text__title{
+      margin: 0 0 4px;
+    }
+    .text__content{
+      margin: 0 0 16px;
+    }
+  }
+  .banner__text{
+    .text__title{
+      h3 {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px; 
+        letter-spacing: -0.36px;
+      }
+    }
+    .text__content{
+      p {
+        font-size: 32px;
+        letter-spacing: -0.64px;
+      }
+    }
+    .text__item p {
+      font-size: 18px;
+      line-height: 24px; 
+      letter-spacing: -0.36px;
+    }
+  }
+  .purple-btn{
+    span{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px; 
+    }
+  }
+  .announcement{
+    h2 {
+      margin: 24px 0 0;
+    }
+    .yellow-btn{
+      margin: 24px 0 0;
+    }
+  }
+  .page-common{
+    h2 {
+      font-size: 28px;
+      line-height: 36px; 
+      letter-spacing: -0.56px;
+      margin: 24px 0 16px;
+    }
+  }
+  .content__block {
+    margin: 16px auto 0;
+  }
+  .licenced{
+    .text-list{
+      .title {
+        font-size: 20px;
+        line-height: 28px; 
+        letter-spacing: -0.4px;
+      }
+      .subTitle {
+        margin: 24px 0 0;
+      }  
+    }
+    .text-list__container{
+      padding: 16px 0 0;
+      margin: 8px 0 0;
+      .text-list__block{
+        gap: 8px;
+      }
+    }
+    .text-list__item{
+      align-items: center;
+      p{
+        font-size: 14px;
+        line-height: 20px; 
+      }
+    }
+  }
+  .bussiness{
+    .content__block {
+      padding: 0 16px;
+    }
+  }
+  .contact-form{
+    .content__block {
+      margin: 0 11px;
+    }
+  }
+  .contact-form__btn{
+    flex-direction: column;
+    align-items: start;
+    margin: 32px 0 0;
+    .yellow-btn{
+      margin: 16px 0 0;
+      width: 100%;
+    }
+  }
 }

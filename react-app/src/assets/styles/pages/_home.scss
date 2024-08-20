@@ -16,6 +16,10 @@
     .yellow-btn{
         padding: 15px 20px;
         margin: 32px 0 0;
+        span{
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 }
 .licenced{
@@ -39,6 +43,7 @@
             color: #111827;
         }
         .detail{
+            line-height: 20px;
             margin: 12px 0 0;
             color: $lightText;
             font-size: 14px;

@@ -35,7 +35,7 @@ const HomePage = () => {
             <div className='home__form'>
                 {/* scroll olduğunda home__planet divine style ile top ını scroll u dinleyerek azaltabilirsiniz */}
                 <div className='home__planet'>
-                    <ImgComponent img={"/img/home/plane-earth.png"} />
+                    <ImgComponent img={"/img/home/plane-earth.png"} imgMobile={"/img/home/plane-earth-mobile.png"} max={641} min={640}/>
                 </div>
                 <ContactFormComponent title={"Join Our LMS"} text="We offer reliable Learning Management System that completely fulfills the requirements from authorities. User friendly interface, easy to read reports and built-in guidance will simplify your learning flow." />
             </div>
