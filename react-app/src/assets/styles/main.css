@@ -111,8 +111,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -607,7 +606,6 @@ label {
   align-items: center;
 }
 .slider .slider__container {
-  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -778,8 +776,7 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -930,8 +927,7 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner__content {
@@ -945,8 +941,7 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .banner__text {
@@ -1320,6 +1315,7 @@ label {
   }
   .banner__img {
     width: 100%;
+    margin: 32px 0 0;
   }
   .banner__content {
     flex-direction: column;
@@ -1335,8 +1331,7 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1350,8 +1345,7 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1378,6 +1372,22 @@ label {
   }
 }
 @media only screen and (max-width: 830px) {
+  .header .menu-list .menu-item {
+    display: none;
+  }
+  .header .menu-list .yellow-btn {
+    margin: 0;
+    padding: 6px 10px;
+  }
+  .header .menu-list .yellow-btn span {
+    font-size: 12px;
+  }
+  .header .menu-list .yellow-btn img {
+    margin: 0 6px 0 0;
+  }
+  .header .mobile-menu {
+    display: block;
+  }
   .footer-top-container {
     flex-direction: column;
     align-items: flex-start;
@@ -1414,8 +1424,7 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -1501,4 +1510,9 @@ label {
   .img-card__text {
     padding: 22px;
   }
-}/*# sourceMappingURL=main.css.map */
+  .safe-area {
+    padding: 0 11px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
