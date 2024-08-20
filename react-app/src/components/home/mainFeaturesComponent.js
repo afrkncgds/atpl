@@ -11,6 +11,7 @@ export const MainFeaturesComponent = () => {
                 <ButtonComponent btnText={"for Your Students"} classN={"purple-btn"} icon={"doubleUser.svg"}/>
                 <h2>The Main Features</h2>
                 <TextListComponent data={listArr} detail="Basically you can manage everything about your student and students’ progress." icon={"tick.svg"} />
+                {/*TODO: button yönlendirmesi ile ilgili Sezer beyden haber gelecek*/}
                 <ButtonComponent btnText={"Contact Us"} classN={"yellow-btn"}/>
             </div>
             <div className="img__block">
