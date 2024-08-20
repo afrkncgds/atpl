@@ -13,15 +13,15 @@ const Header = ()=> {
         },
         {
             name:"About LMS",
-            link:"/about-us"
+            link:"about-us"
         },
         {
             name:"FAQ",
-            link: "/faq"
+            link: "faq"
         },
         {
             name:"Contact Us",
-            link:"/contact-us"
+            link:"contact-us"
         }
     ]
 
