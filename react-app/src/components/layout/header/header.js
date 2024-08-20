@@ -22,6 +22,7 @@ const Header = ()=> {
         {
             name:"Contact Us",
             link:"contact-us"
+            
         }
     ]
 
