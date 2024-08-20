@@ -21,6 +21,10 @@ const AboutUs = () => {
                             </p>
 
                         </div>
+
+
+                    </div>
+                    <div className="image-container">
                         <div className="text-item strong">
                             <p>
                                 As the highest level of aircraft pilot certification,
@@ -31,9 +35,6 @@ const AboutUs = () => {
                             </p>
 
                         </div>
-
-                    </div>
-                    <div className="image-container">
                         <ImgComponent img={"/img/about/about-img.png"}/>
                     </div>
                     <div className="mask-block"/>

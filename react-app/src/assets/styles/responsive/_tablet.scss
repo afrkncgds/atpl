@@ -34,6 +34,22 @@
       margin: 40px 32px 0;
     }
   }
+  .about__cnt{
+    .image-container{
+      .text-item{
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+    .text-container{
+      .text-item{
+        p{
+          font-size: 24px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen   and (max-width:1024px)  {
@@ -58,6 +74,26 @@
     flex-direction: column;
 
   }
+  .about__cnt{
+    .image-container{
+      display: flex;
+      flex-direction: column-reverse;
+      picture{
+        margin: 0;
+      }
+
+    }
+    .about-wrapper{
+      .mask-block{
+        height: 415px;
+      }
+    }
+    .text-container{
+      width: 100%;
+
+    }
+  }
+
 
 
 }
