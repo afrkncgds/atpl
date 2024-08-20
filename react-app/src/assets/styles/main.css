@@ -1093,9 +1093,6 @@ label {
   width: 49.2%;
   z-index: 1;
 }
-.about__cnt .text-container .text-item {
-  margin: 96px 0 0;
-}
 .about__cnt .text-container .text-item p {
   font-size: 28px;
   font-weight: 300;
@@ -1120,6 +1117,9 @@ label {
 }
 .about__cnt .image-container picture {
   margin: -260px 0 0;
+}
+.about__cnt .image-container .text-item {
+  margin: 96px 0 0;
 }
 .about__cnt .image-container .text-item p {
   font-size: 24px;
