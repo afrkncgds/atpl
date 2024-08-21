@@ -2,7 +2,8 @@ import React from 'react';
 import {LogoComponent} from "../../common/logoComponent";
 import {MenuComponent} from "../../common/menuComponent";
 import {SvgImgComponent} from "../../img/svgImgComponent";
-import {TERM_CONDITION} from "../../../constants/routePaths";
+import {LOGIN, TERM_CONDITION} from "../../../constants/routePaths";
+import {useLocation} from "react-router-dom";
 
 const Footer = ({ img}) => {
     const footerMenuArr = [
@@ -23,14 +24,20 @@ const Footer = ({ img}) => {
             link: "/" 
         }
     ]
+    const loc = useLocation();
     return(
+
         <div className='footer'>
             <div className="footer-wrapper safe-area">
-                <div className="footer-top-container ">
-                    <LogoComponent icon={"logo.svg"}/>
-                    <MenuComponent data={footerMenuArr}/>
+                {
+                    loc?.pathname !== LOGIN &&
+                    <div className="footer-top-container ">
+                        <LogoComponent icon={"logo.svg"}/>
+                        <MenuComponent data={footerMenuArr}/>
 
-                </div>
+                    </div>
+                }
+
                 <div className="footer-bottom-container">
                     <div className="social-menu">
                         <a href="/" className="social-item">

@@ -112,8 +112,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -413,7 +412,6 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -627,7 +625,6 @@ label {
   align-items: center;
 }
 .slider .slider__container {
-  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -682,7 +679,6 @@ label {
   justify-content: space-between;
 }
 .copy-block__item img {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -867,8 +863,7 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -1019,8 +1014,7 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner__content {
@@ -1034,8 +1028,7 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .banner__text {
@@ -1378,26 +1371,55 @@ label {
 .login {
   background: #1F1C4A;
   width: 100%;
-  height: calc(100vh - 278px);
-}
-
-.lgheader {
-  padding: 48px 0;
-  background: #1F1C4A;
-}
-
-.lgfooter {
-  background: #1F1C4A;
-  padding: 48px 0;
-}
-.lgfooter .footer-wrapper {
-  height: 52px;
+  height: calc(100dvh - 279px);
 }
 
 .login-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  border-radius: 16px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.login-container picture {
+  display: flex;
+}
+.login-container picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-form {
+  padding: 98px 100px;
+  width: 50%;
+}
+.login-form .title__cnt .title-item h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.login-form .title__cnt .title-item.small {
+  margin: 16px 0 0;
+}
+.login-form .title__cnt .title-item.small h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6B7280;
+  line-height: 24px;
+}
+.login-form .contact-form__block {
+  flex-direction: column;
+  margin: 40px 0 0;
+  gap: 24px;
+}
+.login-form .contact-form__btn {
+  width: 100%;
+  margin: 40px 0 0;
+}
+.login-form .contact-form__btn .btn {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1481,8 +1503,7 @@ label {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1513,8 +1534,7 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1528,8 +1548,7 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1627,8 +1646,7 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -1904,4 +1922,6 @@ label {
     font-size: 12px;
     line-height: 16px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
