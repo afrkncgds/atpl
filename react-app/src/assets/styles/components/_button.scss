@@ -50,3 +50,18 @@
     white-space: nowrap;
   }
 }
+
+.green-btn{
+  background: $green;
+  span{
+    color: #FFF;
+  }
+}
+
+.red-btn{
+  background: $red;
+  border: 1px solid $borderRed;
+  span{
+    color: #FFF;
+  }
+}
