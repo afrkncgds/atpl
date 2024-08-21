@@ -38,3 +38,11 @@
     background: #EEF2FF;
   }
 }
+
+.light-yellow-btn{
+  border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
+  background:#FFFFEA;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: fit-content;
+  margin: 0 auto;
+}

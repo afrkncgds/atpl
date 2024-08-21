@@ -39,10 +39,6 @@ const HomePage = () => {
                 </div>
                 <ContactFormComponent title={"Join Our LMS"} text="We offer reliable Learning Management System that completely fulfills the requirements from authorities. User friendly interface, easy to read reports and built-in guidance will simplify your learning flow." />
             </div>
-
-
-
-
         </div>
     );
 }

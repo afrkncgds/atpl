@@ -356,7 +356,7 @@ template {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000000;
+  color: #111827;
 }
 
 p, span, input {
@@ -406,6 +406,15 @@ label {
 }
 .purple-btn:hover {
   background: #EEF2FF;
+}
+
+.light-yellow-btn {
+  border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
+  background: #FFFFEA;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .input-block {
@@ -643,6 +652,46 @@ label {
   color: #4B5563;
   font-weight: 400;
   line-height: 16px;
+}
+
+.copy-block {
+  display: flex;
+  gap: 20px;
+}
+
+.copy-block__item {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  justify-content: space-between;
+}
+.copy-block__item img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.copy-block__item h2 {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin: 16px 0 8px;
+}
+.copy-block__item p {
+  color: #111827;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.copy-block__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-block .gg-chevron {
@@ -1063,10 +1112,6 @@ label {
   top: 80px;
 }
 
-.contactUs .contact-form .content__block {
-  padding: 48px;
-}
-
 .aboutUs {
   margin: 0 auto 48px;
 }
@@ -1208,7 +1253,15 @@ label {
 }
 
 .contactUs {
-  margin: 0 auto 48px;
+  margin: 0 auto;
+  background: #EEF2FF;
+}
+.contactUs .contact-form .content__block {
+  padding: 48px;
+  margin: 48px 0;
+}
+.contactUs .safe-area {
+  padding: 0 32px 48px;
 }
 
 .contact__cnt {
@@ -1222,6 +1275,13 @@ label {
   font-weight: 500;
   line-height: 48px;
   color: #111827;
+}
+.contact__cnt p {
+  color: #111827;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: -0.56px;
 }
 
 .termCondition {

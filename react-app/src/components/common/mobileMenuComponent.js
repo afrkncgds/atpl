@@ -11,11 +11,11 @@ export const MobileMenuComponent = ({data}) => {
                 {
                     open ?
                         <svg width="12" height="12" viewBox="0 0 12 12"  fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 13L13 1M1 1L13 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 13L13 1M1 1L13 13" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         :
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.59998 5.69995H20.4M3.59998 12H20.4M3.59998 18.3H20.4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.59998 5.69995H20.4M3.59998 12H20.4M3.59998 18.3H20.4" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
 
                 }
@@ -38,7 +38,7 @@ export const MobileMenuComponent = ({data}) => {
                                     </div>
                                     <div className="icon-item">
                                         <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L6 6L1 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 1L6 6L1 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </div>
                                 </a>
