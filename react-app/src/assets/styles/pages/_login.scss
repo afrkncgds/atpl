@@ -1,0 +1,21 @@
+.login{
+  background: #1F1C4A;
+  width: 100%;
+ height:calc(100vh - 278px);
+}
+.lgheader{
+  padding: 48px 0;
+  background: #1F1C4A;
+}
+.lgfooter{
+  background: $backGround;
+  padding: 48px 0;
+  .footer-wrapper{
+    height: 52px;
+  }
+}
+.login-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

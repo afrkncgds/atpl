@@ -10,7 +10,8 @@ import Faq from "../pages/faq";
 import TermCondition from "../pages/termCondition";
 import LoginPage from "../dsPages/loginPage";
 import DashboardHeader from "./dashboard/dashboardHeader";
-import DashboardFooter from "./dashboard/dashboardFooter";
+import LoginHeader from "./login/loginHeader";
+import LoginFooter from "./login/loginFooter";
 
 
 
@@ -20,7 +21,13 @@ function RoutesComponent() {
   return (
     <div>
         <Routes>
-            <Route path={LOGIN} element={<LoginPage />} />
+            <Route path={LOGIN} element={
+                <>
+                    <LoginHeader/>
+                    <LoginPage />
+                    <LoginFooter/>
+                </>
+                } />
             <Route
                 path={DASHBOARD}
                 element={
