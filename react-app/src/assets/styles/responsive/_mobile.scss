@@ -161,6 +161,42 @@
   .input-block textarea {
     height: 160px;
   }
+  .about__cnt{
+    .title-item{
+      padding: 0 11px;
+      margin:  0 0 8px;
+      h1{
+        font-size: 28px;
+      }
+    }
+    .image-container{
+
+      padding: 0 11px;
+
+
+    }
+    .about-wrapper{
+      .mask-block{
+
+      }
+    }
+    .text-container{
+      padding: 0 11px;
+      .text-item{
+        margin: 0 0 24px;
+      }
+
+    }
+    .content-container{
+      padding: 0 11px;
+    }
+  }
+  .aboutUs{
+    padding: 0;
+    .breadcrumb{
+      padding: 16px 11px;
+    }
+  }
 }
 
 @media only screen and (max-width: 560px){

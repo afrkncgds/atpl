@@ -111,8 +111,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -412,7 +411,6 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -616,7 +614,6 @@ label {
   align-items: center;
 }
 .slider .slider__container {
-  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -671,7 +668,6 @@ label {
   justify-content: space-between;
 }
 .copy-block__item img {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item h2 {
@@ -831,8 +827,7 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -983,8 +978,7 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .banner__content {
@@ -998,8 +992,7 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .banner__text {
@@ -1396,18 +1389,47 @@ label {
   .banner__content {
     flex-direction: column;
   }
+  .aboutUs {
+    padding: 0;
+  }
+  .aboutUs .breadcrumb {
+    padding: 16px 32px;
+  }
+  .about__cnt .title-item {
+    padding: 0 32px;
+  }
   .about__cnt .image-container {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0 32px;
+    margin: 0;
   }
   .about__cnt .image-container picture {
     margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .about__cnt .image-container picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about__cnt .image-container .text-item {
+    width: 100%;
   }
   .about__cnt .about-wrapper .mask-block {
     height: 415px;
+    left: -8%;
   }
   .about__cnt .text-container {
     width: 100%;
+    padding: 0 32px;
+  }
+  .about__cnt .text-container .text-item {
+    margin: 0 0 24px;
+  }
+  .about__cnt .content-container {
+    padding: 0 32px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1421,8 +1443,7 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1436,8 +1457,7 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1516,8 +1536,7 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -1632,6 +1651,31 @@ label {
   .input-block textarea {
     height: 160px;
   }
+  .about__cnt .title-item {
+    padding: 0 11px;
+    margin: 0 0 8px;
+  }
+  .about__cnt .title-item h1 {
+    font-size: 28px;
+  }
+  .about__cnt .image-container {
+    padding: 0 11px;
+  }
+  .about__cnt .text-container {
+    padding: 0 11px;
+  }
+  .about__cnt .text-container .text-item {
+    margin: 0 0 24px;
+  }
+  .about__cnt .content-container {
+    padding: 0 11px;
+  }
+  .aboutUs {
+    padding: 0;
+  }
+  .aboutUs .breadcrumb {
+    padding: 16px 11px;
+  }
 }
 @media only screen and (max-width: 560px) {
   .home__cnt {
@@ -1715,4 +1759,6 @@ label {
     margin: 16px 0 0;
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
