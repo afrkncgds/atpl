@@ -73,6 +73,21 @@
       line-height: 40px;
     }
   }
+  .copy-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px; /* Öğeler arası boşluk */
+  }
+
+
+  .copy-block {
+    grid-template-columns: 1fr 1fr; /* Daha geniş ekranlarda iki sütun */
+    grid-template-rows: auto auto; /* Yüksekliği otomatik ayarla */
+  }
+
+  .copy-block__item:nth-child(3) {
+    grid-column: 1 / span 2; /* Üçüncü öğe iki sütun boyunca yayılır */
+  }
 }
 
 @media only screen   and (max-width:700px){
@@ -197,7 +212,8 @@
       padding: 16px 11px;
     }
   }
-}
+
+  }
 
 @media only screen and (max-width: 560px){
   .home__cnt {
