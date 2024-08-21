@@ -1,7 +1,13 @@
 import { ButtonComponent } from "../button/buttonComponent"
 import {MobileMenuComponent} from "./mobileMenuComponent";
+import {useNavigate} from "react-router-dom";
 
 export const MenuComponent = ({ data, btnText, icon }) => {
+    const navigate = useNavigate();
+
+    const goToLogin = () => {
+        navigate('/login');
+    };
     return (
         <div className="menu-list">
             {
@@ -14,7 +20,7 @@ export const MenuComponent = ({ data, btnText, icon }) => {
                     </a>
                 ))
             }
-            <ButtonComponent  btnText={btnText} icon={icon} classN={"yellow-btn"}/>
+            <ButtonComponent func={goToLogin} btnText={btnText} icon={icon} classN={"yellow-btn"}/>
             <MobileMenuComponent data={data}/>
         </div>
     )

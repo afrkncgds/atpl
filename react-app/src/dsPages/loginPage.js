@@ -8,6 +8,7 @@ const LoginPage = () => {
         <div className='login page-common safe-area'>
 
 
+            <h3>login</h3>
 
         </div>
     );

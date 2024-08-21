@@ -3,7 +3,7 @@ import { SvgImgComponent } from "../img/svgImgComponent"
 export const ButtonComponent = ({btnText, icon, classN, func, props}) => {
     return (
         func ? 
-        <button className={`btn ${classN ? classN : ""}`} onClick={()=> props !== undefined && props !== null ? func(props) : func()}>
+        <button className={`btn ${classN ? classN : ""}`} onClick={() => props ? func(props) : func()}>
             {
                 icon &&
                 <SvgImgComponent img={icon} classN={"btn-icon"}/>
