@@ -2,6 +2,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 .safe-area{
     max-width: 1180px;
     margin: 0 auto;
