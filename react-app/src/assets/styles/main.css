@@ -112,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -412,8 +413,13 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+}
+.light-yellow-btn span {
+  color: #482200;
+  white-space: nowrap;
 }
 
 .input-block {
@@ -621,6 +627,7 @@ label {
   align-items: center;
 }
 .slider .slider__container {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -675,9 +682,10 @@ label {
   justify-content: space-between;
 }
 .copy-block__item img {
+  width: -moz-fit-content;
   width: fit-content;
 }
-.copy-block__item h2 {
+.copy-block__item .copy-block__text h2 {
   color: #111827;
   font-size: 20px;
   font-weight: 500;
@@ -689,6 +697,8 @@ label {
   color: #111827;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  max-width: 212px;
 }
 
 .copy-block__text {
@@ -857,7 +867,8 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -1008,7 +1019,8 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -1022,7 +1034,8 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1468,7 +1481,8 @@ label {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1499,7 +1513,8 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1513,7 +1528,8 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1567,6 +1583,25 @@ label {
     min-width: 320px;
     height: 360px;
   }
+  .contact__cnt {
+    margin: 32px 0 0;
+  }
+  .contact__cnt .title-item {
+    margin: 0 0 12px;
+  }
+  .contact__cnt .title-item h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .contact__cnt p {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+  .contactUs .contact-form .content__block {
+    padding: 32px;
+    margin: 32px 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -1592,7 +1627,8 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -1642,6 +1678,9 @@ label {
   }
   .copy-block__item:nth-child(3) {
     grid-column: 1/span 2; /* Üçüncü öğe iki sütun boyunca yayılır */
+  }
+  .copy-block__item p {
+    max-width: 312px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1744,6 +1783,38 @@ label {
   .aboutUs .breadcrumb {
     padding: 16px 11px;
   }
+  .contact__cnt {
+    margin: 24px 0 0;
+  }
+  .contact__cnt .title-item {
+    margin: 0 0 8px;
+  }
+  .contact__cnt .title-item h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .contactUs .contact-form .content__block {
+    padding: 24px 20px;
+    margin: 24px 0;
+  }
+  .contactUs .safe-area {
+    padding: 0 11px 24px;
+  }
+  .copy-block__item {
+    padding: 24px 8px;
+    height: 264px;
+  }
+  .copy-block__item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .light-yellow-btn {
+    padding: 8px 12px;
+  }
+  .light-yellow-btn span {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 @media only screen and (max-width: 560px) {
   .home__cnt {
@@ -1828,5 +1899,9 @@ label {
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 380px) {
+  .copy-block__item p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=main.css.map */

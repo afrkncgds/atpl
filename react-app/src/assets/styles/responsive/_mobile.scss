@@ -88,6 +88,9 @@
   .copy-block__item:nth-child(3) {
     grid-column: 1 / span 2; /* Üçüncü öğe iki sütun boyunca yayılır */
   }
+  .copy-block__item p{
+    max-width: 312px;
+  }
 }
 
 @media only screen   and (max-width:700px){
@@ -212,8 +215,41 @@
       padding: 16px 11px;
     }
   }
-
+  .contact__cnt{
+    margin: 24px 0 0;
+    .title-item{
+      margin: 0 0 8px;
+      h1{
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
   }
+  .contactUs{
+    .contact-form .content__block {
+      padding: 24px 20px;
+      margin: 24px 0;
+    }
+    .safe-area{
+      padding: 0 11px 24px;
+    }
+  }
+  .copy-block__item{
+    padding: 24px 8px;
+    height: 264px;
+    p{
+      font-size: 14px;
+      line-height: 20px; 
+    }
+  }
+  .light-yellow-btn{
+    padding: 8px 12px;
+    span {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
 
 @media only screen and (max-width: 560px){
   .home__cnt {
@@ -317,6 +353,15 @@
     .yellow-btn{
       margin: 16px 0 0;
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .copy-block__item{
+    p{
+      font-size: 12px;
+      line-height: 16px; 
     }
   }
 }

@@ -24,7 +24,7 @@ const ContactUs = () => {
         {
             img: "/address.svg",
             title: "Address",
-            text: "Merkezefendi Mah. <br/> Mevlevihane Çıkmaz Sok. No:5 <br/> 34010 <br/> Zeytinburnu/İstanbul",
+            text: "Merkezefendi Mah. Mevlevihane Çıkmaz Sok. No:5 34010 <br/> Zeytinburnu/İstanbul",
             btnText: "Get Directions",
             icon: "/map.svg"
         }
