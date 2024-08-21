@@ -422,6 +422,21 @@ label {
   white-space: nowrap;
 }
 
+.green-btn {
+  background: #22C55E;
+}
+.green-btn span {
+  color: #FFF;
+}
+
+.red-btn {
+  background: #EF4444;
+  border: 1px solid #DC2626;
+}
+.red-btn span {
+  color: #FFF;
+}
+
 .input-block {
   width: 100%;
 }
@@ -707,29 +722,6 @@ label {
   align-items: center;
 }
 
-.lightbox__cnt {
-  display: none;
-  position: absolute;
-  top: -70px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5019607843);
-  align-items: center;
-  justify-content: center;
-}
-.lightbox__cnt .lightbox__block {
-  padding: 24px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  width: 375px;
-  height: 260px;
-}
-.lightbox__cnt.open {
-  display: flex;
-}
-
 .input-block .gg-chevron {
   position: absolute;
   right: 12px;
@@ -833,6 +825,58 @@ label {
 }
 .contact-form__btn .yellow-btn {
   padding: 14px 20px;
+}
+
+.lightbox {
+  display: none;
+  position: absolute;
+  top: -72px;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5019607843);
+  align-items: center;
+  justify-content: center;
+}
+.lightbox.open {
+  display: flex;
+}
+.lightbox .btn {
+  width: 100%;
+  margin: 32px 0 0;
+}
+.lightbox img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.lightbox h2 {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 20px 0 8px;
+}
+.lightbox p {
+  text-align: center;
+  color: #6B7280;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.lightbox__cnt {
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  min-width: 375px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lightbox__cnt .close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
 }
 
 .header {
