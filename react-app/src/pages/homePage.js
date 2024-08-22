@@ -17,13 +17,13 @@ const HomePage = () => {
             text: "Plan events for your students."
         },
         {
-            img: "/img/home/benefits-2.jpg",
+            img: "/img/home/benefits-1.jpg",
             title: "Student Progress",
             imgMobile: "/img/home/benefits-mobile-1.jpg",
             text: "Student results and pie charts."
         },
         {
-            img: "/img/home/benefits-3.jpg",
+            img: "/img/home/benefits-1.jpg",
             title: "Powerful Management",
             imgMobile: "/img/home/benefits-mobile-1.jpg",
             text: "Advanced management system."
