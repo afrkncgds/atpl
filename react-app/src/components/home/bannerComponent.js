@@ -27,7 +27,7 @@ export const BannerComponent = () => {
 
                 </div>
                 <div className="banner__img">
-                    <ImgComponent img="/img/banner/bannerIpad.png" alt="banner-img" classN={"banner__Ipad"} />
+                    <ImgComponent img="/img/banner/bannerIpad.png" imgMobile={"/img/banner/mobilebannerIpad.png"} alt="banner-img" classN={"banner__Ipad"} />
                 </div>
             </div>
 

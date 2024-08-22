@@ -11,7 +11,7 @@ export const ImgCardComponent = ({ title, classN, data }) => {
                 {
                     data.map((item, key) => (
                         <div className="img-card__item" key={key}>
-                            <ImgComponent img={item.img} alt={`card-block-${key}`} classN={"img-card__bg"}/>
+                            <ImgComponent img={item.img} imgMobile={item.imgMobile || item.img} alt={`card-block-${key}`} classN={"img-card__bg"}/>
                             <div className="img-card__text">
                                 <h3>{item.title}</h3>
                                 <p>{item.text}</p>
