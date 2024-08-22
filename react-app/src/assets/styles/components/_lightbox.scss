@@ -36,8 +36,7 @@
     padding: 24px;
     background: #FFFFFF;
     border-radius: 8px;
-    max-width: 375px;
-    max-height: 260px;
+    min-width: 375px;
     position: relative;
     display: flex;
     flex-direction: column;

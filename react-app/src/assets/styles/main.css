@@ -112,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -412,6 +413,7 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -640,6 +642,7 @@ label {
   align-items: center;
 }
 .slider .slider__container {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -694,6 +697,7 @@ label {
   justify-content: space-between;
 }
 .copy-block__item img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -716,29 +720,6 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.lightbox__cnt {
-  display: none;
-  position: absolute;
-  top: -70px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5019607843);
-  align-items: center;
-  justify-content: center;
-}
-.lightbox__cnt .lightbox__block {
-  padding: 24px;
-  background: #FFFFFF;
-  border-radius: 8px;
-  width: 375px;
-  height: 260px;
-}
-.lightbox__cnt.open {
-  display: flex;
 }
 
 .input-block .gg-chevron {
@@ -866,6 +847,7 @@ label {
   margin: 32px 0 0;
 }
 .lightbox img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .lightbox h2 {
@@ -884,8 +866,7 @@ label {
   padding: 24px;
   background: #FFFFFF;
   border-radius: 8px;
-  max-width: 375px;
-  max-height: 260px;
+  min-width: 375px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -930,7 +911,8 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -1097,7 +1079,8 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -1111,7 +1094,8 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1471,7 +1455,8 @@ label {
 .login-container picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .login-form {
@@ -1586,7 +1571,8 @@ label {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1617,7 +1603,8 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1631,7 +1618,8 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1729,7 +1717,8 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -2005,6 +1994,4 @@ label {
     font-size: 12px;
     line-height: 16px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
