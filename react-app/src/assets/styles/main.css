@@ -526,6 +526,10 @@ label {
   outline: none;
 }
 
+.err-text {
+  display: none;
+}
+
 .input-block.err input, .input-block.err select, .input-block.err textarea {
   border: 1px solid #EF4444;
   margin: 0 0 8px 0;
@@ -534,6 +538,7 @@ label {
   color: #EF4444;
   font-size: 14px;
   line-height: 16px;
+  display: block;
 }
 
 * {

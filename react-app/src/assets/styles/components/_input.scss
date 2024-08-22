@@ -88,6 +88,10 @@
     
 }
 
+.err-text{
+    display: none;
+}
+
 .input-block.err{
     input, select, textarea{
         border: 1px solid $red;
@@ -97,5 +101,6 @@
         color: $red;
         font-size: 14px;
         line-height: 16px; 
+        display: block;
     }
 }
