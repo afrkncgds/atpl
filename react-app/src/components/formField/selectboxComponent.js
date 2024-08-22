@@ -17,7 +17,7 @@ export const SelectBoxComponent = ({ input, options, label, placeholder, errText
                 }
             </select>
             {
-                error &&
+                // error &&
                 <span className='err-text'>
                     {errText || "Error text"}
                 </span>

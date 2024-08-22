@@ -13,7 +13,7 @@ export const TextAreaComponent = ({ input, label, placeholder, errText, meta: { 
                 placeholder={placeholder}
             />
             {
-                error &&
+                // error &&
                 <span className='err-text'>
                     {errText || "Error text"}
                 </span>

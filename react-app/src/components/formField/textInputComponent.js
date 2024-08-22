@@ -16,7 +16,7 @@ export const TextInputComponent = ({ input, type, label, placeholder, meta: { er
                 placeholder={placeholder}
             />
             {
-                error &&
+                // error &&
                 <span className='err-text'>
                     {errText || "Error text"}
                 </span>
