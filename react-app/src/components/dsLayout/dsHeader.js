@@ -4,7 +4,7 @@ import { LogoComponent } from "../common/logoComponent";
 const DsHeader = ()=> {
 
     return(
-        <header className="header">
+        <header className="header ds">
             <div className="header--wrapper safe-area">
                 <LogoComponent icon={"logo.svg"}/>
             </div>

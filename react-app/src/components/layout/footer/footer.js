@@ -37,39 +37,77 @@ const Footer = ({ img}) => {
 
                     </div>
                 }
-
-                <div className="footer-bottom-container">
-                    <div className="social-menu">
-                        <a href="/" className="social-item">
+                {
+                    loc?.pathname !== LOGIN ?
+                    <div className="footer-bottom-container">
+                        <div className="social-menu">
+                            <a href="/" className="social-item">
 
                                 <SvgImgComponent img={"fb.svg"} alt={"icon"}/>
 
 
 
-                        </a>
-                        <a href="/" className="social-item">
-                            <SvgImgComponent img={"tw.svg"} alt={"icon"}/>
+                            </a>
+                            <a href="/" className="social-item">
+                                <SvgImgComponent img={"tw.svg"} alt={"icon"}/>
 
-                        </a>
-                        <a href="/" className="social-item">
-                            <SvgImgComponent img={"insta.svg"} alt={"icon"}/>
+                            </a>
+                            <a href="/" className="social-item">
+                                <SvgImgComponent img={"insta.svg"} alt={"icon"}/>
 
-                        </a>
-                    </div>
-                    <div className="copy-right-block">
-                        <div className="copy-right-item">
-                            <a href={TERM_CONDITION}>
-                                Terms & Conditions
                             </a>
                         </div>
-                        <div className="copy-right-item">
+                        <div className="copy-right-block">
+                            <div className="copy-right-item">
+                                <a href={TERM_CONDITION}>
+                                    Terms & Conditions
+                                </a>
+                            </div>
+                            <div className="copy-right-item">
                             <span>
                                 Copyright © 2017 - 2024 ATPLQuestions
                             </span>
 
+                            </div>
                         </div>
                     </div>
-                </div>
+                        :
+                        <div className="footer-bottom-container ds">
+                            <div className="social-menu">
+                                <a href="/" className="social-item">
+
+                                    <SvgImgComponent img={"fb.svg"} alt={"icon"}/>
+
+
+
+                                </a>
+                                <a href="/" className="social-item">
+                                    <SvgImgComponent img={"tw.svg"} alt={"icon"}/>
+
+                                </a>
+                                <a href="/" className="social-item">
+                                    <SvgImgComponent img={"insta.svg"} alt={"icon"}/>
+
+                                </a>
+                            </div>
+                            <div className="copy-right-block">
+                                <div className="copy-right-item">
+                                    <a href={TERM_CONDITION}>
+                                        Terms & Conditions
+                                    </a>
+                                </div>
+                                <div className="copy-right-item">
+                            <span>
+                                Copyright © 2017 - 2024 ATPLQuestions
+                            </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                }
+
+
 
             </div>
 
