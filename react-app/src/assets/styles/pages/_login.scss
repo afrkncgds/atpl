@@ -1,7 +1,7 @@
 .login{
   background: #1F1C4A;
   width: 100%;
-  height: calc(100dvh - 308px);
+  height: calc(100dvh - 276px);
 
 }
 .login-wrapper{
@@ -30,7 +30,11 @@
 }
 .login-form{
   height: 100%;
-  padding: 98px 100px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $lightBg;
   width: 49%;
   .title__cnt{
     .title-item{
@@ -38,6 +42,7 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 44px;
+        margin: 0;
       }
       &.small{
         margin: 16px 0 0;
@@ -50,10 +55,11 @@
       }
     }
   }
-  .contact-form__block{
+  .login-form__block{
     flex-direction: column;
     margin: 40px 0 0;
     gap: 24px;
+    display: flex;
   }
   .contact-form__btn{
     width: 100%;
@@ -64,12 +70,13 @@
   }
   .forgot-btn{
     margin: 24px 0 0;
-    a{
-      color: #482200;
+    color: #482200;
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;
-    }
+      p{
+        margin: 0 8px 0 0;
+      }
   }
   .yellow-btn{
     span{

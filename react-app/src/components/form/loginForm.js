@@ -22,7 +22,7 @@ export const LoginForm = () => {
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>
-                        Log in to<br/>
+                        Log in to <br/>
                         manage your trainings
                     </h2>
                 </div>
@@ -38,7 +38,7 @@ export const LoginForm = () => {
                 onSubmit={submit}
                 render={({ handleSubmit, sumbitFailed }) => (
                     <form onSubmit={handleSubmit}>
-                        <div className='contact-form__block'>
+                        <div className='login-form__block'>
                             <Field
                                 name="e-mail"
                                 label="E-Mail Address"
@@ -56,15 +56,15 @@ export const LoginForm = () => {
 
 
                         </div>
-                        <div className="forgot-btn">
-                            <Link to={HOME_PAGE}>
+                        <Link to={HOME_PAGE} className="forgot-btn">
+                            <p>
                                 I forgot my password
-                            </Link>
+                            </p>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 5L12 10L7 15" stroke="#482200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
 
-                        </div>
+                        </Link>
 
                         <div className='contact-form__btn'>
                             <ButtonComponent btnText={"Login"} classN={"yellow-btn"} />

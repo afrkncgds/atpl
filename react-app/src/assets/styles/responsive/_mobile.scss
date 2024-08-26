@@ -91,6 +91,25 @@
   .copy-block__item p{
     max-width: 312px;
   }
+
+  .header.ds {
+    padding: 20px 0;
+}
+.login {
+  min-height: calc(100dvh - 252px);
+  height: auto;
+  display: flex;
+}
+.login-wrapper{
+  width: 100%;
+}
+.footer-bottom-container.ds{
+  height: 100%;
+}
+.login-form .title__cnt .title-item h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
 }
 
 @media only screen   and (max-width:700px){
@@ -355,6 +374,17 @@
       width: 100%;
     }
   }
+  .login{
+    .contact-form__btn{
+      .yellow-btn{
+        margin: 0;
+      }
+    }
+  }
+  .login-form .title__cnt .title-item h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
 }
 
 @media only screen and (max-width: 380px){

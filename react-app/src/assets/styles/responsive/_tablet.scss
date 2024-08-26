@@ -28,6 +28,8 @@
     }
   }
 }
+
+
 @media only screen   and (max-width:1240px)  {
   .contact-form{
     .content__block{
@@ -49,6 +51,15 @@
         }
       }
     }
+  }
+}
+
+@media only screen   and (max-width:1200px)  {
+  .login-container picture{
+    width: 42%;
+  }
+  .login-form{
+    width: 58%;
   }
 }
 
@@ -122,7 +133,9 @@
       padding: 0 32px;
     }
   }
-
+  .login-form{
+    padding: 0 48px;
+  }
 
 
 }
@@ -242,5 +255,48 @@
   .contactUs .contact-form .content__block {
     padding: 32px;
     margin: 32px 0;
+  }
+
+  .login-container picture{
+    display: none;
+  }
+  .login-wrapper{
+    height: auto;
+  }
+  .login{
+    height: calc(100dvh - 252px);
+  }
+  .login-form{
+    width: 100%;
+    padding: 16px;
+    .forgot-btn{
+      margin: 16px 0 0;
+    }
+    .title-item{
+      br{
+        display: none;
+      }
+    }
+    .title__cnt .title-item.small{
+      margin: 8px 0 0;
+    }
+    .login-form__block{
+      margin: 36px 0 0;
+      gap: 16px;
+    } 
+    .contact-form__btn{
+      margin: 36px 0 0;
+    }
+  }
+  .header.ds {
+    padding: 36px 0;
+}
+}
+
+@media only screen and (max-height: 820px) and (min-width: 830px){
+  .login-form{
+    .contact-form__btn{
+      margin: 24px 0 0;
+    }
   }
 }

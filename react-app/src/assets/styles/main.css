@@ -112,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -412,6 +413,7 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -651,6 +653,7 @@ label {
   align-items: center;
 }
 .slider .slider__container {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -705,6 +708,7 @@ label {
   justify-content: space-between;
 }
 .copy-block__item img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -854,6 +858,7 @@ label {
   margin: 32px 0 0;
 }
 .lightbox img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .lightbox h2 {
@@ -917,7 +922,8 @@ label {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -1067,7 +1073,6 @@ label {
 }
 .footer-bottom-container.ds {
   height: 52px;
-  margin: 32px 0 0;
 }
 
 .banner {
@@ -1091,7 +1096,8 @@ label {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -1105,7 +1111,8 @@ label {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1448,7 +1455,7 @@ label {
 .login {
   background: #1F1C4A;
   width: 100%;
-  height: calc(100dvh - 308px);
+  height: calc(100dvh - 276px);
 }
 
 .login-wrapper {
@@ -1472,18 +1479,24 @@ label {
 .login-container picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .login-form {
   height: 100%;
-  padding: 98px 100px;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #EEF2FF;
   width: 49%;
 }
 .login-form .title__cnt .title-item h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
+  margin: 0;
 }
 .login-form .title__cnt .title-item.small {
   margin: 16px 0 0;
@@ -1494,10 +1507,11 @@ label {
   color: #6B7280;
   line-height: 24px;
 }
-.login-form .contact-form__block {
+.login-form .login-form__block {
   flex-direction: column;
   margin: 40px 0 0;
   gap: 24px;
+  display: flex;
 }
 .login-form .contact-form__btn {
   width: 100%;
@@ -1508,12 +1522,13 @@ label {
 }
 .login-form .forgot-btn {
   margin: 24px 0 0;
-}
-.login-form .forgot-btn a {
   color: #482200;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+}
+.login-form .forgot-btn p {
+  margin: 0 8px 0 0;
 }
 .login-form .yellow-btn span {
   font-size: 16px;
@@ -1567,6 +1582,14 @@ label {
     font-size: 24px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .login-container picture {
+    width: 42%;
+  }
+  .login-form {
+    width: 58%;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .banner {
     height: auto;
@@ -1611,7 +1634,8 @@ label {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1630,6 +1654,9 @@ label {
   .about__cnt .content-container {
     padding: 0 32px;
   }
+  .login-form {
+    padding: 0 48px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .banner__text .text__content p {
@@ -1642,7 +1669,8 @@ label {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1656,7 +1684,8 @@ label {
   .home__planet img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1729,6 +1758,43 @@ label {
     padding: 32px;
     margin: 32px 0;
   }
+  .login-container picture {
+    display: none;
+  }
+  .login-wrapper {
+    height: auto;
+  }
+  .login {
+    height: calc(100dvh - 252px);
+  }
+  .login-form {
+    width: 100%;
+    padding: 16px;
+  }
+  .login-form .forgot-btn {
+    margin: 16px 0 0;
+  }
+  .login-form .title-item br {
+    display: none;
+  }
+  .login-form .title__cnt .title-item.small {
+    margin: 8px 0 0;
+  }
+  .login-form .login-form__block {
+    margin: 36px 0 0;
+    gap: 16px;
+  }
+  .login-form .contact-form__btn {
+    margin: 36px 0 0;
+  }
+  .header.ds {
+    padding: 36px 0;
+  }
+}
+@media only screen and (max-height: 820px) and (min-width: 830px) {
+  .login-form .contact-form__btn {
+    margin: 24px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header {
@@ -1754,7 +1820,8 @@ label {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -1807,6 +1874,24 @@ label {
   }
   .copy-block__item p {
     max-width: 312px;
+  }
+  .header.ds {
+    padding: 20px 0;
+  }
+  .login {
+    min-height: calc(100dvh - 252px);
+    height: auto;
+    display: flex;
+  }
+  .login-wrapper {
+    width: 100%;
+  }
+  .footer-bottom-container.ds {
+    height: 100%;
+  }
+  .login-form .title__cnt .title-item h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -2024,12 +2109,17 @@ label {
     margin: 16px 0 0;
     width: 100%;
   }
+  .login .contact-form__btn .yellow-btn {
+    margin: 0;
+  }
+  .login-form .title__cnt .title-item h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 @media only screen and (max-width: 380px) {
   .copy-block__item p {
     font-size: 12px;
     line-height: 16px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
