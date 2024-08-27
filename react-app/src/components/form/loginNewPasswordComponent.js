@@ -42,12 +42,14 @@ export const LoginNewPasswordComponent = () => {
                                 name="e-mail"
                                 label="E-Mail Address"
                                 type="text"
+
                                 component={TextInputComponent}
                             />
                             <Field
                                 name="password"
                                 label="Passsword"
                                 type="text"
+                                svg="/img/svg/eye-off.svg"
                                 component={TextInputComponent}
                             />
 
