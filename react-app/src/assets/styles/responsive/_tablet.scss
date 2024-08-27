@@ -298,5 +298,16 @@
     .contact-form__btn{
       margin: 24px 0 0;
     }
+    &.check-email{
+      .contact-form__btn{
+        margin: 24px 0 0;
+      }
+    }
+    .text-list__block{
+      gap: 8px;
+    }
+    .login__mail-text{
+      margin: 8px 0 0;
+    }
   }
 }

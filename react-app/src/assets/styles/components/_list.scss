@@ -13,3 +13,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.text-list__dot{
+    display: flex;
+    &::before{
+        content: '';
+        display: block;
+        width: 4px;
+        height: 4px;
+        min-width: 4px;
+        border-radius: 50%;
+        background: #6B7280;
+        margin: 10px 8px 0 0;
+    }
+}

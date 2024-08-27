@@ -35,7 +35,6 @@ const LoginPage = ({img}) => {
                         :
                         <div/>
                     }
-                    
                     <ImgComponent img="/img/dashboard/login.png" alt="login-img"/>
                 </div>
 

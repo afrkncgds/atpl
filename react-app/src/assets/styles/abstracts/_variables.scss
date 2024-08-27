@@ -5,7 +5,6 @@ $bannerTitle: #C8D3FD;
 $backGround:#1F1C4A;
 $bg: #EEF2FF;
 $lightText: #6B7280;
-$darkText: #111827;
 $red: #EF4444;
 $yellow: #FFC100;
 $yellowTextHover: #BB6A02; 
@@ -23,5 +22,5 @@ p, span, input{
 }
 
 label{
-    color: $darkText;
+    color: $title;
 }

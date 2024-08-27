@@ -11,7 +11,7 @@ export const TextListComponent = ({data, icon, detail}) => {
                             icon &&
                             <SvgImgComponent img={icon} alt={`list-icon-${key}`}/>
                         }
-                        <p>{item}</p>
+                        <p className={`${!icon ? "text-list__dot" : ""}`}>{item}</p>
                     </div>
                 ))
             }
