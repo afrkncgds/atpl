@@ -4,6 +4,7 @@ import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
 import {HOME_PAGE, LOGIN} from "../../constants/routePaths";
+import { StepLineComponent } from '../common/stepLineComponent';
 
 
 export const NewPasswordComponent = () => {
@@ -29,7 +30,6 @@ export const NewPasswordComponent = () => {
                     <h3>
                         Your password must be at least 10 characters. It must contain 1 uppercase letter, 1 lowercase letter and a number.
                     </h3>
-
                 </div>
             </div>
             <Form
@@ -41,20 +41,17 @@ export const NewPasswordComponent = () => {
                             <Field
                                 name="password"
                                 label="Password"
-                                type="text"
+                                type="password"
+                                svg="/eye-off.svg"
+                                firstSvg={"/lock.svg"}
+                                placeholder="*******************"
                                 component={TextInputComponent}
                             />
-
-
-
-
+                            <StepLineComponent length={4} activeVal={0}/>
                         </div>
-
-
-                        <Link to={LOGIN + "? login-pass"} className='contact-form__btn'>
+                        <Link to={LOGIN + "?login-pass"} className='contact-form__btn'>
                             <ButtonComponent btnText={"Confirm My Password"} classN={"yellow-btn"} />
                         </Link>
-
                     </form>
                 )}
             ></Form>

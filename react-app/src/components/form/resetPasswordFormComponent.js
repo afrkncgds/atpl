@@ -52,7 +52,7 @@ export const ResetPasswordFormComponent = () => {
 
 
                        <div className="btn-block">
-                           <Link  to={LOGIN + "? check-mail"} className='contact-form__btn'>
+                           <Link  to={LOGIN + "?check-mail"} className='contact-form__btn'>
                                <ButtonComponent btnText={"Reset My Password"} classN={"yellow-btn"} />
                            </Link>
                            <Link to={LOGIN} className='contact-form__btn'>

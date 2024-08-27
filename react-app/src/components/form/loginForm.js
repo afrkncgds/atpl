@@ -48,8 +48,8 @@ export const LoginForm = () => {
                             <Field
                                 name="password"
                                 label="Password"
-                                type="text"
-                                svg="/img/svg/eye-off.svg"
+                                type="password"
+                                svg="/eye-off.svg"
                                 component={TextInputComponent}
                             />
 

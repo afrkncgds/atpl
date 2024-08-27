@@ -28,8 +28,6 @@ export const LoginNewPasswordComponent = () => {
                     </h2>
                 </div>
                 <div className="title-item small">
-
-
                 </div>
             </div>
             <Form
@@ -48,17 +46,11 @@ export const LoginNewPasswordComponent = () => {
                             <Field
                                 name="password"
                                 label="Passsword"
-                                type="text"
-                                svg="/img/svg/eye-off.svg"
+                                type="password"
+                                svg="/eye-off.svg"
                                 component={TextInputComponent}
                             />
-
-
-
-
                         </div>
-
-
                         <Link to={LOGIN} className='contact-form__btn'>
                             <ButtonComponent btnText={"Login"} classN={"yellow-btn"} />
                         </Link>

@@ -1,5 +1,17 @@
 .input-block{
     width: 100%;
+    position: relative;
+    .last{
+        position: absolute;
+        right: 12px;
+        top: 38px;
+        cursor: pointer;
+    }
+    .first{
+        position: absolute;
+        left: 12px;
+        top: 38px;
+    }
 }
 
 .input-block input, .sbx-item__slc, .input-block select, .input-block textarea{
@@ -12,6 +24,16 @@
     font-size: 14px;
     outline: none;
     -webkit-appearance: none;
+    &::-webkit-input-placeholder {
+        color: #9CA3AF;
+    }
+    &:hover, &.active{
+        border: 1px solid #6B7280;
+    }
+    &:focus, &:focus &.active{
+        box-shadow: 0px 0px 0px 4px rgba(225, 225, 254, 0.70);
+        border: 1px solid #A7B6FA;
+    }
 }
 
 .input-block select{
@@ -104,3 +126,10 @@
         display: block;
     }
 }
+
+.input-block{
+    .svg-input{
+        padding: 0 12px 0 36px;
+    }
+}
+

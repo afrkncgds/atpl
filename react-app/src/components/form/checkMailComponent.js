@@ -29,8 +29,8 @@ export const CheckMailComponent = () => {
                 <p className='login__bold-text'>If you have not received your Password Reset e-mail:</p>
                 <TextListComponent data={data}/>
             </div>
-            <Link to={LOGIN + "? new-pass"} className='contact-form__btn'>
-                <ButtonComponent btnText={"Reset My Password"} classN={"btn white-btn"} />
+            <Link to={LOGIN + "?new-pass"} className='contact-form__btn'>
+                <ButtonComponent btnText={"Return to Login"} classN={"btn white-btn"} />
             </Link>
         </section>
     )

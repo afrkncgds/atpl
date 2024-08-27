@@ -85,15 +85,7 @@
       line-height: 18px;
     }
   }
-  .input-block{
-    position: relative;
-    svg{
-      position: absolute;
-      right: 12px;
-      bottom:14px;
-      cursor: pointer;
-    }
-  }
+  
   &.reset-password{
     .btn-block{
       margin: 136px 0 0;
@@ -142,6 +134,11 @@
   &.check-email{
     .contact-form__btn{
       margin: 80px 0 0;
+    }
+  }
+  &.new-pass{
+    .contact-form__btn{
+      margin: 102px 0 0;
     }
   }
 }

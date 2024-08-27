@@ -186,3 +186,16 @@
     align-items: center; 
 }
 
+.step-line{
+    gap: 1px;
+    display: flex;
+}
+
+.step-line__item{
+    height: 4px;
+    width: 100%;
+    background: #D1D5DB;
+    &.active{
+        background: #22C55E;
+    }
+}
