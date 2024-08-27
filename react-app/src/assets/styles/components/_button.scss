@@ -11,7 +11,18 @@
     font-weight: 500;
   }
 }
-
+.white-btn{
+  background: #FFFFFF;
+  border: 1px solid #FFC100;
+  span{
+    color: #482200;
+  }
+  &:hover{
+    span{
+      color: #BB6A02;
+    }
+  }
+}
 .btn-icon{
   margin: 0 8px 0 0;
 }

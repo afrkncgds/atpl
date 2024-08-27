@@ -94,6 +94,26 @@
       cursor: pointer;
     }
   }
+  &.reset-password{
+    .btn-block{
+      margin: 136px 0 0;
+      .contact-form__btn{
+        margin: 16px 0 0;
+        &:first-child{
+          margin: 0;
+        }
+
+      }
+    }
+  }
+  &.login-pass{
+    .login-form__block{
+      margin: 80px 0 0;
+    }
+    .contact-form__btn{
+      margin: 100px 0 0;
+    }
+  }
 
 
 }

@@ -18,7 +18,7 @@ export const CheckMailComponent = () => {
     };
 
     return (
-        <section className='login-form'>
+        <section className='login-form check-mail'>
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>

@@ -18,7 +18,7 @@ export const ResetPasswordFormComponent = () => {
     };
 
     return (
-        <section className='login-form'>
+        <section className='login-form reset-password'>
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>
@@ -56,7 +56,7 @@ export const ResetPasswordFormComponent = () => {
                                <ButtonComponent btnText={"Reset My Password"} classN={"yellow-btn"} />
                            </Link>
                            <Link to={LOGIN} className='contact-form__btn'>
-                               <ButtonComponent btnText={"Return to Login"} classN={"btn"} />
+                               <ButtonComponent btnText={"Return to Login"} classN={"btn white-btn"} />
                            </Link>
                        </div>
                     </form>

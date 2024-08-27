@@ -19,7 +19,7 @@ export const LoginNewPasswordComponent = () => {
     };
 
     return (
-        <section className='login-form'>
+        <section className='login-form login-pass'>
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>

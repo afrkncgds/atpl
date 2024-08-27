@@ -18,7 +18,7 @@ export const NewPasswordComponent = () => {
     };
 
     return (
-        <section className='login-form'>
+        <section className='login-form new-pass'>
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>
