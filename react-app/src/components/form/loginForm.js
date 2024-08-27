@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import {HOME_PAGE, LOGIN} from "../../constants/routePaths";
+import {DASHBOARD, HOME_PAGE, LOGIN} from "../../constants/routePaths";
 
 
 export const LoginForm = () => {
@@ -66,9 +66,9 @@ export const LoginForm = () => {
 
                         </Link>
 
-                        <div className='contact-form__btn'>
+                        <Link to={DASHBOARD} className='contact-form__btn'>
                             <ButtonComponent btnText={"Login"} classN={"yellow-btn"} />
-                        </div>
+                        </Link>
                     </form>
                 )}
             ></Form>

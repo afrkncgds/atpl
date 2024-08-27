@@ -3,10 +3,11 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import {HOME_PAGE, LOGIN} from "../../constants/routePaths";
+import {LOGIN} from "../../constants/routePaths";
 
 
-export const ResetPasswordFormComponent = () => {
+
+export const LoginNewPasswordComponent = () => {
     const validate = (values) => {
         const errors = {};
 
@@ -22,13 +23,12 @@ export const ResetPasswordFormComponent = () => {
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>
-                    Reset Password
+                        Log in with
+                        your new password
                     </h2>
                 </div>
                 <div className="title-item small">
-                    <h3>
-                    We need your email address so we can send you the password reset link.
-                    </h3>
+
 
                 </div>
             </div>
@@ -44,6 +44,12 @@ export const ResetPasswordFormComponent = () => {
                                 type="text"
                                 component={TextInputComponent}
                             />
+                            <Field
+                                name="password"
+                                label="Passsword"
+                                type="text"
+                                component={TextInputComponent}
+                            />
 
 
 
@@ -51,14 +57,9 @@ export const ResetPasswordFormComponent = () => {
                         </div>
 
 
-                       <div className="btn-block">
-                           <Link  to={LOGIN + "? check-mail"} className='contact-form__btn'>
-                               <ButtonComponent btnText={"Reset My Password"} classN={"yellow-btn"} />
-                           </Link>
-                           <Link to={LOGIN} className='contact-form__btn'>
-                               <ButtonComponent btnText={"Return to Login"} classN={"btn"} />
-                           </Link>
-                       </div>
+                        <Link to={LOGIN} className='contact-form__btn'>
+                            <ButtonComponent btnText={"Login"} classN={"yellow-btn"} />
+                        </Link>
                     </form>
                 )}
             ></Form>

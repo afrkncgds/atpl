@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import {HOME_PAGE, LOGIN} from "../../constants/routePaths";
 
 
-export const ResetPasswordFormComponent = () => {
+export const NewPasswordComponent = () => {
     const validate = (values) => {
         const errors = {};
 
@@ -22,12 +22,12 @@ export const ResetPasswordFormComponent = () => {
             <div className="title__cnt">
                 <div className="title-item">
                     <h2>
-                    Reset Password
+                        Set your new password
                     </h2>
                 </div>
                 <div className="title-item small">
                     <h3>
-                    We need your email address so we can send you the password reset link.
+                        Your password must be at least 10 characters. It must contain 1 uppercase letter, 1 lowercase letter and a number.
                     </h3>
 
                 </div>
@@ -39,8 +39,8 @@ export const ResetPasswordFormComponent = () => {
                     <form onSubmit={handleSubmit}>
                         <div className='login-form__block'>
                             <Field
-                                name="e-mail"
-                                label="E-Mail Address"
+                                name="password"
+                                label="Password"
                                 type="text"
                                 component={TextInputComponent}
                             />
@@ -51,14 +51,10 @@ export const ResetPasswordFormComponent = () => {
                         </div>
 
 
-                       <div className="btn-block">
-                           <Link  to={LOGIN + "? check-mail"} className='contact-form__btn'>
-                               <ButtonComponent btnText={"Reset My Password"} classN={"yellow-btn"} />
-                           </Link>
-                           <Link to={LOGIN} className='contact-form__btn'>
-                               <ButtonComponent btnText={"Return to Login"} classN={"btn"} />
-                           </Link>
-                       </div>
+                        <Link to={LOGIN + "? login-pass"} className='contact-form__btn'>
+                            <ButtonComponent btnText={"Confirm My Password"} classN={"yellow-btn"} />
+                        </Link>
+
                     </form>
                 )}
             ></Form>
