@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import {HOME_PAGE} from "../../constants/routePaths";
+import {HOME_PAGE, LOGIN} from "../../constants/routePaths";
 
 
 export const LoginForm = () => {
@@ -56,12 +56,12 @@ export const LoginForm = () => {
 
 
                         </div>
-                        <Link to={HOME_PAGE} className="forgot-btn">
+                        <Link to={LOGIN + "?reset-password"} className="forgot-btn">
                             <p>
                                 I forgot my password
                             </p>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 5L12 10L7 15" stroke="#482200" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 5L12 10L7 15" stroke="#482200" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
 
                         </Link>
@@ -72,8 +72,6 @@ export const LoginForm = () => {
                     </form>
                 )}
             ></Form>
-
-
         </section>
     )
 }

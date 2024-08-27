@@ -2,8 +2,6 @@ import { ASSETS } from "../../constants/paths"
 
 export const ImgComponent = ({ lazy, classN, alt, img, imgMobile, min, max }) => {
     const type = img.split(".")[1]
-    console.log("TYPEE--", type);
-    
     return (
         <picture>
             <source media={`(min-width: ${min ? min + "px" : "431px"})`}

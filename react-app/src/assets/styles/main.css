@@ -441,6 +441,10 @@ label {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  cursor: pointer;
+}
+.forgot-btn p {
+  cursor: pointer;
 }
 
 .input-block {
@@ -1010,7 +1014,7 @@ label {
 }
 .footer .menu-list .menu-item:nth-child(4) svg path {
   fill: #FFC100;
-  stroke-width: 0;
+  strokeWidth: 0;
 }
 .footer .menu-list .yellow-btn {
   margin: 0 0 0 48px;
