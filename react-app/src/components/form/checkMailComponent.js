@@ -30,7 +30,7 @@ export const CheckMailComponent = () => {
                 <TextListComponent data={data}/>
             </div>
             <Link to={LOGIN + "? new-pass"} className='contact-form__btn'>
-                <ButtonComponent btnText={"Reset My Password"} classN={"btn"} />
+                <ButtonComponent btnText={"Reset My Password"} classN={"btn white-btn"} />
             </Link>
         </section>
     )
