@@ -1446,7 +1446,7 @@ body {
   margin: 48px 0;
 }
 .contactUs .safe-area {
-  padding: 0 32px 48px;
+  padding: 0 0 48px;
 }
 
 .contact__cnt {
@@ -1592,13 +1592,19 @@ body {
 }
 .login-form .forgot-btn {
   margin: 24px 0 0;
-  color: #482200;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
 }
 .login-form .forgot-btn p {
   margin: 0 8px 0 0;
+  color: #482200;
+}
+.login-form .forgot-btn:hover p {
+  color: #BB6A02;
+}
+.login-form .forgot-btn:hover svg path {
+  stroke: #BB6A02;
 }
 .login-form .yellow-btn span {
   font-size: 16px;

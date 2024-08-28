@@ -70,13 +70,24 @@
   }
   .forgot-btn{
     margin: 24px 0 0;
-    color: #482200;
+
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;
       p{
         margin: 0 8px 0 0;
+        color: #482200;
       }
+    &:hover{
+      p{
+        color: #BB6A02;
+      }
+      svg{
+        path{
+          stroke: #BB6A02;
+        }
+      }
+    }
   }
   .yellow-btn{
     span{

@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import {LOGIN} from "../../constants/routePaths";
+import {DASHBOARD, LOGIN} from "../../constants/routePaths";
 
 
 
@@ -51,7 +51,7 @@ export const LoginNewPasswordComponent = () => {
                                 component={TextInputComponent}
                             />
                         </div>
-                        <Link to={LOGIN} className='contact-form__btn'>
+                        <Link to={DASHBOARD} className='contact-form__btn'>
                             <ButtonComponent btnText={"Login"} classN={"yellow-btn"} />
                         </Link>
                     </form>
