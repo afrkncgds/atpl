@@ -1,5 +1,5 @@
 import { ImgComponent } from "../img/imgComponent"
-import { SvgImgComponent } from "../img/svgImgComponent"
+
 
 export const SliderComponent = ({ data }) => {
     return (

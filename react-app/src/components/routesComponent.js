@@ -3,13 +3,14 @@ import Header from "./layout/header/header";
 import Footer from "./layout/footer/footer";
 import HomePage from "../pages/homePage";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { ABOUT_US, CONTACT_US, FAQ, HOME_PAGE, LOGIN, TERM_CONDITION, } from "../constants/routePaths";
+import {ABOUT_US, CONTACT_US, DASHBOARD, FAQ, HOME_PAGE, LOGIN, TERM_CONDITION,} from "../constants/routePaths";
 import AboutUs from "../pages/aboutUs";
 import ContactUs from "../pages/contactUs";
 import Faq from "../pages/faq";
 import TermCondition from "../pages/termCondition";
 import LoginPage from "../dsPages/loginPage";
 import DsHeader from "./dsLayout/dsHeader";
+import Dashboard from "../dsPages/dashboard";
 
 
 
@@ -24,6 +25,7 @@ function RoutesComponent() {
                         <DsHeader />
                         <Routes>
                             <Route exact path={LOGIN} element={<LoginPage />} />
+                            <Route exact path={DASHBOARD} element={<Dashboard />} />
                         </Routes>
                         <Footer />
                     </>

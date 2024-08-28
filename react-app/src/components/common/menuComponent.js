@@ -2,7 +2,7 @@ import { LOGIN } from "../../constants/routePaths";
 import { ButtonComponent } from "../button/buttonComponent"
 import {MobileMenuComponent} from "./mobileMenuComponent";
 import {useNavigate} from "react-router-dom";
-import {SvgImgComponent} from "../img/svgImgComponent";
+
 
 export const MenuComponent = ({ data, btnText, icon }) => {
     const navigate = useNavigate();

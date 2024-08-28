@@ -389,7 +389,7 @@ label {
 .white-btn span {
   color: #482200;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
 }
 .white-btn:hover span {
   color: #BB6A02;
@@ -790,6 +790,53 @@ body {
 }
 .step-line__item.active {
   background: #22C55E;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.calendar-section {
+  width: 392px; /* Görseldeki takvim genişliği */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-list-section {
+  width: 300px; /* Görseldeki etkinlik listesi genişliği */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fc {
+  max-width: 100%;
+}
+
+.fc-toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.fc-daygrid-day-number {
+  color: #666;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.fc-event {
+  background-color: #ffc107;
+  border: none;
+  color: #333;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 14px;
 }
 
 .input-block .gg-chevron {

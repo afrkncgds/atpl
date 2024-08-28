@@ -1,4 +1,4 @@
-import { SvgImgComponent } from "../img/svgImgComponent"
+
 
 export const TitleComponent = ({ title}) => {
     return(

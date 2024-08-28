@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TextLicanceListComponent } from "../list/textLicanceListComponent";
+
 import { SliderComponent } from '../common/sliderComponent';
 
 
