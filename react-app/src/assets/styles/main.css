@@ -593,6 +593,10 @@ label {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: #EEF2FF;
+}
+
 .no-scroll {
   overflow: hidden;
   position: fixed;
@@ -704,6 +708,7 @@ label {
   align-items: center;
   padding: 16px 0;
   border-bottom: 1px solid #D1D5DB;
+  background: #EEF2FF;
 }
 .breadcrumb .icon-item {
   width: 20px;
@@ -1292,6 +1297,7 @@ label {
 
 .aboutUs {
   margin: 0 auto 48px;
+  background: #EEF2FF;
 }
 
 .about__cnt {
@@ -1373,6 +1379,7 @@ label {
 
 .faq {
   margin: 0 auto 48px;
+  background: #EEF2FF;
 }
 
 .faq__cnt {
