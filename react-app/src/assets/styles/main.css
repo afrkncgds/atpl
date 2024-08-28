@@ -383,10 +383,13 @@ label {
 
 .white-btn {
   background: #FFFFFF;
+  padding: 14px 16px;
   border: 1px solid #FFC100;
 }
 .white-btn span {
   color: #482200;
+  font-size: 16px;
+  line-height: 17px;
 }
 .white-btn:hover span {
   color: #BB6A02;
@@ -1516,7 +1519,7 @@ label {
 .login {
   background: #1F1C4A;
   width: 100%;
-  height: calc(100dvh - 276px);
+  height: 684px;
 }
 
 .login-wrapper {
