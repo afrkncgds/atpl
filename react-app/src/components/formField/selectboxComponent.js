@@ -19,30 +19,32 @@ export const SelectBoxComponent = ({ label, options, meta: { error, touched } })
     };
 
     return (
-        <div className={`input-block select ${isDropdownOpen ? "open" : ""}`}>
-            <label>{label}</label>
-            <SvgImgComponent img={"chevron.svg"} classN={`gg-chevron`} />
-            <div className='select__item' onClick={toggleDropdown}>
-                {selectedOption}
-            </div>
+        <app-react>
+            <div className={`input-block select ${isDropdownOpen ? "open" : ""}`}>
+                <label>{label}</label>
+                <SvgImgComponent img={"chevron.svg"} classN={`gg-chevron`}/>
+                <div className='select__item' onClick={toggleDropdown}>
+                    {selectedOption}
+                </div>
 
-            {isDropdownOpen && (
-                <ul className='select__dropdown'>
-                    <li className='select__dropdown-item search'>
-                        <SvgImgComponent img={"search.svg"}/>
-                        Search
-                    </li>
-                    {options.map((option, index) => (
-                        <li 
-                            key={index} 
-                            className='select__dropdown-item'
-                            onClick={() => handleOptionClick(option.label)} 
-                        >
-                            {option.label}
+                {isDropdownOpen && (
+                    <ul className='select__dropdown'>
+                        <li className='select__dropdown-item search'>
+                            <SvgImgComponent img={"search.svg"}/>
+                            Search
                         </li>
-                    ))}
-                </ul>
-            )}
-        </div>
+                        {options.map((option, index) => (
+                            <li
+                                key={index}
+                                className='select__dropdown-item'
+                                onClick={() => handleOptionClick(option.label)}
+                            >
+                                {option.label}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+        </app-react>
     );
 };

@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import { LOGIN} from "../../constants/routePaths";
+import {LOGIN} from "../../constants/routePaths";
 
 
 export const ResetPasswordFormComponent = () => {

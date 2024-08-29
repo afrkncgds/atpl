@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import { LOGIN} from "../../constants/routePaths";
+import {DASHBOARD, LOGIN} from "../../constants/routePaths";
 import { StepLineComponent } from '../common/stepLineComponent';
 
 
@@ -49,7 +49,7 @@ export const NewPasswordComponent = () => {
                             />
                             <StepLineComponent length={4} activeVal={0}/>
                         </div>
-                        <Link to={LOGIN + "?login-pass"} className='contact-form__btn'>
+                        <Link to={DASHBOARD} className='contact-form__btn'>
                             <ButtonComponent btnText={"Confirm My Password"} classN={"yellow-btn"} />
                         </Link>
                     </form>

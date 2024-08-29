@@ -7,6 +7,7 @@ const DsHeader = ()=> {
         <header className="header ds">
             <div className="header--wrapper safe-area">
                 <LogoComponent icon={"logo.svg"}/>
+
             </div>
         </header>
     )
