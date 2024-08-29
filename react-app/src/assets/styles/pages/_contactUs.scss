@@ -6,6 +6,19 @@
         padding: 48px;
         margin: 48px 0;
     }
+    .input-block{
+      width: 484px;
+      max-width: none;
+      &.select{
+        width: 580px;
+      }
+      &.text-area{
+        width: 580px;
+      }
+    }
+  }
+  .contact-form__item{
+    max-width: none;
   }
   .safe-area{
     padding: 0 0 48px;

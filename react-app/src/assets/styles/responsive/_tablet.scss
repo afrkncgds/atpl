@@ -28,6 +28,9 @@
     }
   }
 }
+.contactUs{
+  padding: 0 16px;
+}
 
 
 @media only screen   and (max-width:1240px)  {
@@ -60,6 +63,38 @@
   }
   .login-form{
     width: 58%;
+  }
+  .home{
+    .contact-form__block{
+      .input-block{
+        width: 318px;
+
+        &.select{
+          width: 318px;
+
+        }
+        &.text-area{
+          width: 318px;
+
+        }
+      }
+    }
+  }
+  .contact-form__item{
+    width: unset;
+  }
+  .contactUs{
+    .contact-form{
+      .input-block{
+        width: 380px;
+        &.select{
+          width: 380px;
+        }
+        &.text-area{
+          width: 380px;
+        }
+      }
+    }
   }
 }
 
@@ -179,6 +214,22 @@
   .home__form{
     padding: 190px 0 0;
   }
+  .contactUs{
+    .contact-form__block{
+      flex-direction: column;
+    }
+    .contact-form{
+      .input-block{
+        width: 100%;
+        &.select{
+          width: 100%;
+        }
+        &.text-area{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media only screen   and (max-width:860px){
@@ -191,10 +242,23 @@
   .content__block{
     margin: 32px auto 0;
   }
-  .contact-form__block{
-    flex-direction: column;
-    .input-block:first-child{
-      max-width: none;
+  .home{
+    .contact-form__block{
+      flex-direction: column;
+
+      .input-block{
+        width: 100%;
+        max-width: none;
+
+        &.select{
+          width: 100%;
+          max-width: none;
+        }
+        &.text-area{
+          width: 100%;
+          max-width: none;
+        }
+      }
     }
   }
   .contact-form__item{
