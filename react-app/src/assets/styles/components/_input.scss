@@ -14,7 +14,7 @@
     }
 }
 
-.input-block input, .sbx-item__slc, .input-block select, .input-block textarea{
+.input-block input, .sbx-item__slc, .input-block .select__item, .input-block textarea{
     width: 100%;
     height: 48px;
     padding: 0 12px;
@@ -36,8 +36,18 @@
     }
 }
 
-.input-block select{
+.open .select__item{
+    box-shadow: 0px 0px 0px 4px rgba(225, 225, 254, 0.70);
+    border: 1px solid #A7B6FA;
+    &:hover{
+        border: 1px solid #A7B6FA;
+    }
+}
+
+.input-block .select__item{
     cursor: pointer;
+    display: flex;
+    align-items: center;
     .disabled{
         color: #9CA3AF;
     }
@@ -115,7 +125,7 @@
 }
 
 .input-block.err{
-    input, select, textarea{
+    input, .select__item, textarea{
         border: 1px solid $red;
         margin: 0 0 8px 0;
     }
@@ -133,3 +143,39 @@
     }
 }
 
+.select__dropdown{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background: white;
+    padding: 8px;
+    list-style: none;
+    margin: 8px 0 0;
+    z-index: 1;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.08), 0px 6px 15px -2px rgba(16, 24, 40, 0.08);
+}
+
+.select__dropdown-item{
+    color: #1F2937;
+    font-size: 16px;
+    line-height: 18px; 
+    height: 36px;
+    padding: 0 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 4px 0 0;
+    img{
+        margin: 0 8px 0 0;
+    }
+    &.search{
+        margin: 0;
+    }
+    &.search, &:hover{
+        border-radius: 8px;
+        background: #F3F4F6;
+    }
+}

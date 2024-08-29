@@ -47,7 +47,6 @@ export const ContactFormComponent = ({ title, text, isBg=true }) => {
                                     name="subject"
                                     label="Subject"
                                     component={SelectBoxComponent}
-                                    type='selectbox'
                                     options={[
                                         { value: 'option0', label: 'Select Subject' },
                                         { value: 'option1', label: 'LMS Demo Request' },

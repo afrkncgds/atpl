@@ -1,27 +1,48 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { SvgImgComponent } from '../img/svgImgComponent';
 
-export const SelectBoxComponent = ({ input, options, label, placeholder, errText, meta: { error, touched }, max, disabled, name }) => {
-    const [isOpen, setOpen] = useState(false);
+export const SelectBoxComponent = ({ label, options, meta: { error, touched } }) => {
+    // State tanımlama
+    const [selectedOption, setSelectedOption] = useState('Bir seçenek seçin');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+
+    // Seçim değişikliği handler'ı
+    const handleOptionClick = (option) => {
+        setSelectedOption(option);
+        setIsDropdownOpen(false);
+    };
+
+    // Açılır listeyi açma/kapama handler'ı
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
     return (
-        <div
-            className={`input-block select ${touched && error ? "err" : ""}`}
-        >
-            <label htmlFor={input.name}>{label}</label>
-            <SvgImgComponent img={"chevron.svg"} classN={`gg-chevron ${isOpen ? "open" : ""}`} />
-            <select name={name} id={name} onClick={() => setOpen(!isOpen)}>
-                {
-                    options.map((item, key) => (
-                        <option key={key} value={item.value} className={key === 0 ? "disabled" : ""}>{item.label}</option>
-                    ))
-                }
-            </select>
-            {
-                // error &&
-                <span className='err-text'>
-                    {errText || "Error text"}
-                </span>
-            }
+        <div className={`input-block select ${isDropdownOpen ? "open" : ""}`}>
+            <label>{label}</label>
+            <SvgImgComponent img={"chevron.svg"} classN={`gg-chevron`} />
+            <div className='select__item' onClick={toggleDropdown}>
+                {selectedOption}
+            </div>
+
+            {isDropdownOpen && (
+                <ul className='select__dropdown'>
+                    <li className='select__dropdown-item search'>
+                        <SvgImgComponent img={"search.svg"}/>
+                        Search
+                    </li>
+                    {options.map((option, index) => (
+                        <li 
+                            key={index} 
+                            className='select__dropdown-item'
+                            onClick={() => handleOptionClick(option.label)} 
+                        >
+                            {option.label}
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
-}
+};

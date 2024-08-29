@@ -112,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -426,6 +427,7 @@ label {
   border: 1px solid var(--Secondary-Yellow-400, #FFE01B);
   background: #FFFFEA;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04), 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
@@ -475,7 +477,7 @@ label {
   top: 38px;
 }
 
-.input-block input, .sbx-item__slc, .input-block select, .input-block textarea {
+.input-block input, .sbx-item__slc, .input-block .select__item, .input-block textarea {
   width: 100%;
   height: 48px;
   padding: 0 12px;
@@ -486,21 +488,31 @@ label {
   outline: none;
   -webkit-appearance: none;
 }
-.input-block input::-webkit-input-placeholder, .sbx-item__slc::-webkit-input-placeholder, .input-block select::-webkit-input-placeholder, .input-block textarea::-webkit-input-placeholder {
+.input-block input::-webkit-input-placeholder, .sbx-item__slc::-webkit-input-placeholder, .input-block .select__item::-webkit-input-placeholder, .input-block textarea::-webkit-input-placeholder {
   color: #9CA3AF;
 }
-.input-block input:hover, .input-block input.active, .sbx-item__slc:hover, .sbx-item__slc.active, .input-block select:hover, .input-block select.active, .input-block textarea:hover, .input-block textarea.active {
+.input-block input:hover, .input-block input.active, .sbx-item__slc:hover, .sbx-item__slc.active, .input-block .select__item:hover, .input-block .select__item.active, .input-block textarea:hover, .input-block textarea.active {
   border: 1px solid #6B7280;
 }
-.input-block input:focus, .input-block input:focus .input-block input.active, .sbx-item__slc:focus, .input-block input:focus .sbx-item__slc.active, .input-block select:focus, .input-block input:focus .input-block select.active, .input-block textarea:focus, .input-block input:focus .input-block textarea.active, .sbx-item__slc:focus .input-block input.active, .sbx-item__slc:focus .sbx-item__slc.active, .sbx-item__slc:focus .input-block select.active, .sbx-item__slc:focus .input-block textarea.active, .input-block select:focus .input-block input.active, .input-block select:focus .sbx-item__slc.active, .input-block select:focus .input-block select.active, .input-block select:focus .input-block textarea.active, .input-block textarea:focus .input-block input.active, .input-block textarea:focus .sbx-item__slc.active, .input-block textarea:focus .input-block select.active, .input-block textarea:focus .input-block textarea.active {
+.input-block input:focus, .input-block input:focus .input-block input.active, .sbx-item__slc:focus, .input-block input:focus .sbx-item__slc.active, .input-block .select__item:focus, .input-block input:focus .input-block .select__item.active, .input-block textarea:focus, .input-block input:focus .input-block textarea.active, .sbx-item__slc:focus .input-block input.active, .sbx-item__slc:focus .sbx-item__slc.active, .sbx-item__slc:focus .input-block .select__item.active, .sbx-item__slc:focus .input-block textarea.active, .input-block .select__item:focus .input-block input.active, .input-block .select__item:focus .sbx-item__slc.active, .input-block .select__item:focus .input-block .select__item.active, .input-block .select__item:focus .input-block textarea.active, .input-block textarea:focus .input-block input.active, .input-block textarea:focus .sbx-item__slc.active, .input-block textarea:focus .input-block .select__item.active, .input-block textarea:focus .input-block textarea.active {
   box-shadow: 0px 0px 0px 4px rgba(225, 225, 254, 0.7);
   border: 1px solid #A7B6FA;
 }
 
-.input-block select {
-  cursor: pointer;
+.open .select__item {
+  box-shadow: 0px 0px 0px 4px rgba(225, 225, 254, 0.7);
+  border: 1px solid #A7B6FA;
 }
-.input-block select .disabled {
+.open .select__item:hover {
+  border: 1px solid #A7B6FA;
+}
+
+.input-block .select__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.input-block .select__item .disabled {
   color: #9CA3AF;
 }
 
@@ -574,7 +586,7 @@ label {
   display: none;
 }
 
-.input-block.err input, .input-block.err select, .input-block.err textarea {
+.input-block.err input, .input-block.err .select__item, .input-block.err textarea {
   border: 1px solid #EF4444;
   margin: 0 0 8px 0;
 }
@@ -587,6 +599,43 @@ label {
 
 .input-block .svg-input {
   padding: 0 12px 0 36px;
+}
+
+.select__dropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  background: white;
+  padding: 8px;
+  list-style: none;
+  margin: 8px 0 0;
+  z-index: 1;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 6px 15px -2px rgba(16, 24, 40, 0.08), 0px 6px 15px -2px rgba(16, 24, 40, 0.08);
+}
+
+.select__dropdown-item {
+  color: #1F2937;
+  font-size: 16px;
+  line-height: 18px;
+  height: 36px;
+  padding: 0 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 4px 0 0;
+}
+.select__dropdown-item img {
+  margin: 0 8px 0 0;
+}
+.select__dropdown-item.search {
+  margin: 0;
+}
+.select__dropdown-item.search, .select__dropdown-item:hover {
+  border-radius: 8px;
+  background: #F3F4F6;
 }
 
 * {
@@ -699,6 +748,7 @@ body {
   align-items: center;
 }
 .slider .slider__container {
+  max-width: -moz-fit-content;
   max-width: fit-content;
   overflow: hidden;
 }
@@ -754,6 +804,7 @@ body {
   justify-content: space-between;
 }
 .copy-block__item img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .copy-block__item .copy-block__text h2 {
@@ -843,6 +894,10 @@ body {
   position: absolute;
   right: 12px;
   top: 38px;
+}
+
+.open .gg-chevron {
+  transform: rotate(180deg);
 }
 
 .gg-chevron.open {
@@ -978,6 +1033,7 @@ body {
   margin: 32px 0 0;
 }
 .lightbox img {
+  width: -moz-fit-content;
   width: fit-content;
 }
 .lightbox h2 {
@@ -1041,7 +1097,8 @@ body {
 .header .logo-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .mobile-menu-block {
   position: absolute;
@@ -1214,7 +1271,8 @@ body {
 .banner__mask img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner__content {
@@ -1228,7 +1286,8 @@ body {
 .banner__img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__text {
@@ -1597,7 +1656,8 @@ body {
 .login-container picture img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .login-form {
@@ -1794,7 +1854,8 @@ body {
   .about__cnt .image-container picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about__cnt .image-container .text-item {
     width: 100%;
@@ -1828,7 +1889,8 @@ body {
   .announcement .img__block img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .img-card__block {
     overflow: hidden;
@@ -1842,7 +1904,8 @@ body {
   .home__planet img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .home__form {
     padding: 190px 0 0;
@@ -1986,7 +2049,8 @@ body {
   .header .logo-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .header .mobile-menu {
     display: block;
@@ -2125,7 +2189,7 @@ body {
   .home__planet {
     top: 64px;
   }
-  .input-block input, .sbx-item__slc, .input-block select {
+  .input-block input, .sbx-item__slc, .input-block .select__item {
     height: 40px;
   }
   .input-block .gg-chevron {
@@ -2287,6 +2351,4 @@ body {
     font-size: 12px;
     line-height: 16px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

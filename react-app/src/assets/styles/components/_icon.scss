@@ -4,6 +4,12 @@
     top: 38px;
 }
 
+.open{
+    .gg-chevron{
+        transform: rotate(180deg);
+    }
+}
+
 .gg-chevron{
     &.open{
         transform: rotate(180deg);
