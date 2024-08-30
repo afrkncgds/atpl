@@ -3,7 +3,7 @@ import {Field, Form} from "react-final-form";
 import {TextInputComponent} from "../formField/textInputComponent";
 import {ButtonComponent} from "../button/buttonComponent";
 import {Link} from "react-router-dom";
-import {DASHBOARD, LOGIN} from "../../constants/routePaths";
+import {DASHBOARD} from "../../constants/routePaths";
 import { StepLineComponent } from '../common/stepLineComponent';
 
 

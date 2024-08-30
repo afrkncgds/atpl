@@ -4,7 +4,7 @@ export const TextAreaComponent = ({ input, label, placeholder, errText, meta: { 
     return (
         <react-app>
             <div
-                className={`input-block ${touched && error ? "err" : ""}`}
+                className={`input-block text-area ${touched && error ? "err" : ""}`}
             >
                 <label htmlFor={input.name}>{label}</label>
                 <textarea

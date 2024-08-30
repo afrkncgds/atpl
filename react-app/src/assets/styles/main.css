@@ -1387,6 +1387,22 @@ body {
 .home__form .contact-form {
   width: 100%;
 }
+.home__form form {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.home__form .contact-form__block .input-block {
+  width: 380px;
+  max-width: 380px;
+}
+.home__form .contact-form__block .input-block.select {
+  width: 580px;
+  max-width: 580px;
+}
+.home__form .contact-form__block .input-block.text-area {
+  width: 580px;
+  max-width: 580px;
+}
 
 .home__planet {
   position: absolute;
@@ -1542,6 +1558,19 @@ body {
 .contactUs .contact-form .content__block {
   padding: 48px;
   margin: 48px 0;
+}
+.contactUs .contact-form .input-block {
+  width: 484px;
+  max-width: none;
+}
+.contactUs .contact-form .input-block.select {
+  width: 580px;
+}
+.contactUs .contact-form .input-block.text-area {
+  width: 580px;
+}
+.contactUs .contact-form__item {
+  max-width: none;
 }
 .contactUs .safe-area {
   padding: 0 0 48px;
@@ -1782,6 +1811,10 @@ body {
     margin: 0 12px;
   }
 }
+.contactUs {
+  padding: 0 16px;
+}
+
 @media only screen and (max-width: 1240px) {
   .contact-form .content__block {
     margin: 40px 32px 0;
@@ -1799,6 +1832,27 @@ body {
   }
   .login-form {
     width: 58%;
+  }
+  .home .contact-form__block .input-block {
+    width: 318px;
+  }
+  .home .contact-form__block .input-block.select {
+    width: 318px;
+  }
+  .home .contact-form__block .input-block.text-area {
+    width: 318px;
+  }
+  .contact-form__item {
+    width: unset;
+  }
+  .contactUs .contact-form .input-block {
+    width: 380px;
+  }
+  .contactUs .contact-form .input-block.select {
+    width: 380px;
+  }
+  .contactUs .contact-form .input-block.text-area {
+    width: 380px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1898,6 +1952,18 @@ body {
   .home__form {
     padding: 190px 0 0;
   }
+  .contactUs .contact-form__block {
+    flex-direction: column;
+  }
+  .contactUs .contact-form .input-block {
+    width: 100%;
+  }
+  .contactUs .contact-form .input-block.select {
+    width: 100%;
+  }
+  .contactUs .contact-form .input-block.text-area {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 860px) {
   .home__cnt {
@@ -1909,10 +1975,19 @@ body {
   .content__block {
     margin: 32px auto 0;
   }
-  .contact-form__block {
+  .home .contact-form__block {
     flex-direction: column;
   }
-  .contact-form__block .input-block:first-child {
+  .home .contact-form__block .input-block {
+    width: 100%;
+    max-width: none;
+  }
+  .home .contact-form__block .input-block.select {
+    width: 100%;
+    max-width: none;
+  }
+  .home .contact-form__block .input-block.text-area {
+    width: 100%;
     max-width: none;
   }
   .contact-form__item {

@@ -83,6 +83,24 @@
     .contact-form{
         width: 100%;
     }
+    form{
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    .contact-form__block{
+        .input-block{
+            width: 380px;
+            max-width: 380px;
+            &.select{
+                width: 580px;
+                max-width: 580px;
+            }
+            &.text-area{
+                width: 580px;
+                max-width: 580px;
+            }
+        }
+    }
 }
 
 .home__planet{
