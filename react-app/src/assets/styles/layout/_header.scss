@@ -6,6 +6,11 @@
     align-items: center;
     .menu-item{
       margin: 0 0 0 48px;
+      display: flex;
+      align-items: center;
+      svg{
+        margin: 0 8px 0 0;
+      }
       &:first-child{
         margin: 0;
       }
