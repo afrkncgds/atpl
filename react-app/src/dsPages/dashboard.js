@@ -29,7 +29,7 @@ const Dashboard = () => {
                 <div>
                     <StatisticComponent title="LMS Statistics" data={statistic}/>
                 </div>
-                {/* <CalendarComponent/> */}
+                <CalendarComponent/>
             </div>
         </div>
     );
