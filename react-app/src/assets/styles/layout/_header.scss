@@ -72,6 +72,27 @@
   }
   &.ds{
     padding: 48px 0;
+    .menu-list{
+      .menu-item{
+        &:hover{
+          svg{
+            path{
+              stroke: #FFF985;
+            }
+          }
+        }
+        &.active{
+          svg{
+            path{
+              stroke: #FFF985;
+            }
+          }
+          span{
+            color:#FFF985 ;
+          }
+        }
+      }
+    }
   }
 
 }

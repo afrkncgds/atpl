@@ -16,7 +16,7 @@ export const DsMenuComponent = () => {
                         stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
 
-                <span>test</span>
+                <span>Dashboard</span>
             </a>
             <a href="/" className="menu-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@ export const DsMenuComponent = () => {
                 </svg>
 
 
-                <span>test</span>
+                <span>My Students</span>
             </a>
             <a href="/" className="menu-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ export const DsMenuComponent = () => {
                 </svg>
 
 
-                <span>test</span>
+                <span>Saved Tests</span>
             </a>
             <a href="/" className="menu-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ export const DsMenuComponent = () => {
                 </svg>
 
 
-                <span>test</span>
+                <span>2</span>
             </a>
             <a href="/" className="menu-item">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,11 @@ export const DsMenuComponent = () => {
                 </svg>
 
 
-                <span>test</span>
+                <span>ATPL (H)</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8L10 13L5 8" stroke="white" strokeWidth="1.5" strokeLinecap="round"
+                          strokeLinejoin="round"/>
+                </svg>
             </a>
             <a href="/" className="menu-item">
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +82,7 @@ export const DsMenuComponent = () => {
                 </svg>
 
 
-                <span>test</span>
+                <span>Gökhan</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 8L10 13L5 8" stroke="white" strokeWidth="1.5" strokeLinecap="round"
                           strokeLinejoin="round"/>
