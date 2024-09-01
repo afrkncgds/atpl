@@ -1138,6 +1138,16 @@ body {
 .header.ds .menu-list .menu-item.active span {
   color: #FFF985;
 }
+.header.ds .menu-list .menu-item.notification span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFC100;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: black;
+}
 
 .header--wrapper {
   display: flex;
