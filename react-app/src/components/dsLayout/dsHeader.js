@@ -14,6 +14,7 @@ const DsHeader = () => {
                     loc.pathname !== LOGIN &&
                     <div className="menu-block">
                         <DsMenuComponent />
+
                     </div>
                 }
             </div>

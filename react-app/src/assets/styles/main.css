@@ -1809,6 +1809,18 @@ body {
   margin: 102px 0 0;
 }
 
+.dashboard {
+  position: relative;
+}
+.dashboard .background-item {
+  width: 100%;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1F1C4A;
+}
+
 @media only screen and (max-width: 1300px) {
   .header {
     padding: 16px 11px;

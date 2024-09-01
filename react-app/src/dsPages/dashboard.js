@@ -9,6 +9,7 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard page-common '>
+            <div className="background-item"/>
             <div className="safe-area">
                 <CalendarComponent/>
             </div>
