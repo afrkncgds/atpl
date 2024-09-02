@@ -105,6 +105,15 @@
         }
       }
     }
+    .background-item{
+      width: 100%;
+      height: 276px;
+      position: absolute;
+      top: 128px;
+      left: 0;
+      background: #1F1C4A;
+      z-index: -1;
+    }
   }
 
 }

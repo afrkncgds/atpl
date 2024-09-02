@@ -18,6 +18,7 @@ const DsHeader = () => {
                     </div>
                 }
             </div>
+            <div className="background-item"/>
         </header>
     )
 }

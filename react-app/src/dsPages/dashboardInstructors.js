@@ -3,7 +3,7 @@ import CalendarComponent from "../components/common/calendarComponent";
 import { DsAsideMenuComponent } from '../components/dsComponents/dsAsideMenuComponent';
 import { StatisticComponent } from '../components/common/statisticComponent';
 
-const Dashboard = () => {
+const DashboardInstructors = () => {
     const statistic = [
         {
             icon: "groupPurple.svg",
@@ -23,7 +23,7 @@ const Dashboard = () => {
     ]
     return (
         <div className='dashboard page-common '>
-
+            <div className="background-item"/>
             <div className="safe-area dashboard-container">
                 <DsAsideMenuComponent/>
                 <div>
@@ -35,4 +35,4 @@ const Dashboard = () => {
     );
 }
 
-export default Dashboard;
+export default DashboardInstructors;
