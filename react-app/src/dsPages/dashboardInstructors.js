@@ -21,11 +21,61 @@ const DashboardInstructors = () => {
             text: "Students waiting for invitation approval"
         }
     ]
+    const asideData = [
+        {
+            title: "Student Management",
+            content: [
+                {
+                    icon: "group.svg",
+                    text: "My Students"
+                },
+                {
+                    icon: "student.svg",
+                    text: "Student Groups"
+                },
+                {
+                    icon: "addPerson.svg",
+                    text: "Student Registration"
+                },
+                {
+                    icon: "greyReport.svg",
+                    text: "Reports",
+                    isComingSoon: true
+                }
+            ]
+        },
+        {
+            title: "Test Management",
+            content: [
+                {
+                    icon: "createFile.svg",
+                    text: "Create Test"
+                },
+                {
+                    icon: "copyFile.svg",
+                    text: "Saved Tests"
+                }
+            ]
+        },
+        {
+            title: "School Management",
+            content: [
+                {
+                    icon: "packages.svg",
+                    text: "My Packages"
+                },
+                {
+                    icon: "person.svg",
+                    text: "Instructors Management"
+                }
+            ]
+        }
+    ]
     return (
         <div className='dashboard page-common '>
             <div className="background-item"/>
             <div className="safe-area dashboard-container">
-                <DsAsideMenuComponent/>
+                <DsAsideMenuComponent data={asideData}/>
                 <div>
                     <StatisticComponent title="LMS Statistics" data={statistic}/>
                 </div>

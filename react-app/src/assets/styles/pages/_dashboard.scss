@@ -9,6 +9,20 @@
   gap: 20px;
 }
 
+.dashboard-content{
+  border-radius: 8px;
+  border: 1px solid  #E5E7EB;
+  background: #FFF;
+  padding: 20px;
+  h2{
+      color: $title;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      margin: 0 0 20px 0;
+  }
+}
+
 .aside-menu{
   width: fit-content;
   padding: 20px 16px;

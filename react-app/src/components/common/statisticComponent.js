@@ -3,7 +3,7 @@ import { SvgImgComponent } from '../img/svgImgComponent';
 
 export const StatisticComponent = ({ data, title }) => {
     return (
-        <section className='statistic'>
+        <section className='statistic dashboard-content'>
             <h2>{title}</h2>
             <div className={`statistic-block ${data.length === 3 ? "triple" : ""}`}>
                 {
