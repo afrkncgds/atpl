@@ -2,6 +2,7 @@ import React from 'react';
 import CalendarComponent from "../components/common/calendarComponent";
 import { DsAsideMenuComponent } from '../components/dsComponents/dsAsideMenuComponent';
 import { StatisticComponent } from '../components/common/statisticComponent';
+import { LineListContainerComponent } from '../components/list/lineListContainerComponent';
 
 const DashboardInstructors = () => {
     const statistic = [
@@ -71,6 +72,35 @@ const DashboardInstructors = () => {
             ]
         }
     ]
+    const lineList = [
+        {
+            text: "Oscar Manuel De La Nuez Kusznierz",
+            icon: "studentPurple.svg"
+        },
+        {
+            text: "Desiare Herwitz",
+            icon: "studentPurple.svg"
+        },
+        {
+            text: "Talan Siphron"
+        },
+        {
+            text: "Marley Rosser",
+            icon: "studentPurple.svg"
+        },
+        {
+            text: "Ahmad Calzoni",
+            icon: "studentPurple.svg"
+        },
+        {
+            text: "Lincoln George Sharon Brown",
+            icon: "studentPurple.svg"
+        },
+        {
+            text: "Phillip Botosh",
+            icon: "studentPurple.svg"
+        }
+    ]
     return (
         <div className='dashboard page-common '>
             <div className="background-item"/>
@@ -78,6 +108,7 @@ const DashboardInstructors = () => {
                 <DsAsideMenuComponent data={asideData}/>
                 <div>
                     <StatisticComponent title="LMS Statistics" data={statistic}/>
+                    <LineListContainerComponent data={lineList} title={"Recently Added Students"}/>
                 </div>
                 <CalendarComponent/>
             </div>
