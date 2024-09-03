@@ -4,7 +4,7 @@ import {DsMobileMenuComponent} from "./dsMobileMenuComponent";
 import {NOTIFICATIONS} from "../../constants/routePaths";
 
 
-export const DsMenuComponent = () => {
+export const DsMenuComponent = ({data}) => {
     const navigate = useNavigate();
 
 
@@ -93,7 +93,7 @@ export const DsMenuComponent = () => {
             </a>
 
 
-            <DsMobileMenuComponent/>
+            <DsMobileMenuComponent data={data}/>
 
         </div>
     )
